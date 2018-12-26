@@ -1,0 +1,25 @@
+{
+  "name": "paul-shryock",
+  "version": "0.1.0",
+  "description": "Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulshryock/Paul-Shryock.git"
+  },
+  "keywords": [
+    "personal"
+  ],
+  "author": "Paul Shryock",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/paulshryock/Paul-Shryock/issues"
+  },
+  "homepage": "https://github.com/paulshryock/Paul-Shryock#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.6.0"
+  }
+}
