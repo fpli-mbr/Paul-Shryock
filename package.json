@@ -1,19 +1,22 @@
 {
   "name": "paul-shryock",
   "version": "0.1.0",
-  "description": "Personal Website",
-  "main": "app.js",
+  "description": "Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.",
   "scripts": {
-    "test": "test"
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paulshryock/Paul-Shryock.git"
   },
-  "keywords": [
-    "personal"
-  ],
-  "author": "Paul Shryock",
+  "author": {
+    "name": "Paul Shryock",
+    "email": "paul@pshry.com",
+    "url": "https://pshry.com/"
+  },
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/paulshryock/Paul-Shryock/issues"

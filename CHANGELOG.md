@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-## 0.1.0 - XXXX-XX-XX - Development
+## 0.1.0 - 2018-12-28 - Development
 
 ### Added
+- Add page, article content types
+- Add home, about, contact, 404 pages
+- Add Lorem Ipsum article

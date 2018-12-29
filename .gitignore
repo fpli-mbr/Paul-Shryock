@@ -25,20 +25,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Apache Configuration
+# Project files
+_site/
+node_modules/
+package-lock.json
 .htaccess
-
-# Authentication
+certs/
+cms/
+scratch/
 *auth*
-
-# SSL Certificates
-/certs/*
-
-# Content Management System
-/cms/*
-
-# Node Modules
-node_modules
-
-# Private scratch pad
-/scratch/*
