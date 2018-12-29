@@ -1,0 +1,23 @@
+{
+  "title": "Paul Shryock",
+  "description": "Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.",
+
+  "url": "https://pshry.com/",
+  "feed": {
+    "subtitle": "Front End Developer & Web Designer",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://pshry.com/feed/feed.xml",
+    "id": "https://pshry.com/"
+  },
+
+  "author": {
+    "name": "Paul Shryock",
+    "email": "paul@pshry.com"
+  },
+
+  "layout": "_layouts/page",
+  "body_class": "site",
+
+  "copyright": "&copy {{ 'now' | date: '%Y' }} Paul Shryock. All rights reserved."
+}

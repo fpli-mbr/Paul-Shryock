@@ -1,0 +1,13 @@
+{
+	"topics": [
+		"Front End Development"
+	],
+
+	"permalink": "./{{ title | slug }}/index.html",
+	"layout": "_layouts/single",
+	"body_class": [
+		"single",
+		"article"
+	],
+	"tags": "article"
+}

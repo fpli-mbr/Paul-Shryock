@@ -1,0 +1,8 @@
+{
+	"permalink": "./{{ slug }}/index.html",
+	"layout": "_layouts/page",
+	"body_class": [
+		"page",
+	],
+	"tags": "page"
+}

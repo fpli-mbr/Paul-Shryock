@@ -1,13 +1,14 @@
 ---
 title: Contact Me
 excerpt: Shoot me a quick note by filling out this form. Follow me on social media and feel free to reach out any time.
-seo-title: Get in Touch With Paul Shryock
-seo-description: Shoot me a quick note by filling out this form. Follow me on social media and feel free to reach out any time.
 slug: contact
-tags: page
----
 
-# Contact Me
+seo_title: Get in Touch With Paul Shryock
+
+nav_title: Contact
+navigation: 3
+
+---
 
 ## Send Me An Email
 

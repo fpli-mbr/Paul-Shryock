@@ -1,13 +1,14 @@
 ---
 title: About Me
 excerpt: Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.
-seo-title: Learn more about Paul Shryock
-seo-description: Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.
 slug: about
-tags: page
----
 
-# About Me
+seo_title: Learn More About Paul Shryock
+
+nav_title: About
+navigation: 2
+
+---
 
 I'm a Lead Front End Developer and Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies, and startups.
 
