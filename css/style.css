@@ -1482,6 +1482,10 @@ form div {
 	margin: 1rem 0;
 }
 
+.archive .post-header {
+	margin: 0 0 1rem;
+}
+
 .card {
 	margin: 2rem 0.5rem;
 }

@@ -1,7 +1,7 @@
 {
 	"permalink": "./{{ slug }}/index.html",
 	"content_type": "page",
-	"layout": "_layouts/page",
+	"layout": "page",
 	"body_class": [
 		"page"
 	],
