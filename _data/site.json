@@ -1,6 +1,7 @@
 {
   "title": "Paul Shryock",
   "description": "Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.",
+  "version": "{{ pkg.version }}",
 
   "url": "https://pshry.com/",
   "feed": {
@@ -13,7 +14,8 @@
 
   "author": {
     "name": "Paul Shryock",
-    "email": "paul@pshry.com"
+    "email": "paul@pshry.com",
+    "url": "https://pshry.com/"
   },
 
   "layout": "_layouts/page",

@@ -2,13 +2,16 @@
 	"topics": [
 		"Front End Development"
 	],
+	"skills": [
+		"HTML"
+	],
 
 	"permalink": "./{{ title | slug }}/index.html",
-	"content_type": "article",
-	"layout": "_layouts/article",
+	"content_type": "tutorial",
+	"layout": "_layouts/tutorial",
 	"body_class": [
 		"single",
-		"article"
+		"tutorial"
 	],
-	"tags": "article"
+	"tags": "tutorial"
 }
