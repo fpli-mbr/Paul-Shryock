@@ -6,7 +6,8 @@
 		"HTML"
 	],
 
-	"permalink": "./{{ tags }}/{{ title | slug }}/index.html",
+	"permalink": "./{{ title | slug }}/index.html",
+	"content_type": "tutorial",
 	"layout": "_layouts/tutorial",
 	"body_class": [
 		"single",

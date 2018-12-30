@@ -3,8 +3,9 @@ title: Home
 
 seo_title: Paul Shryock | Front End Developer & Web Designer
 
-navigation: 11
+navigation: 1
 
+content_type: page
 layout: _layouts/page
 body_class: [
 	page,

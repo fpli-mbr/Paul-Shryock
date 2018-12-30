@@ -5,7 +5,7 @@ slug:
 date: // example: 2018-12-02T00:00:00-5, optional, doesn't display
 cover_image: '' // optional, doesn't display
 cover_image_alt: // optional, doesn't display
-topics: [ ] // optional, doesn't display, no default
+topics: [ ] // array, optional, doesn't display, no default
 
 seo_title: // defaults to title
 seo_description: // defaults to excerpt
@@ -16,7 +16,8 @@ nav_title: // defaults to title
 navigation: // number, optional
 
 permalink: // defaults to ./{{ slug }}/index.html
+content_type: // defaults to page
 layout: // defaults to _layouts/page
-body_class: [ ] // defaults to page
+body_class: [ ] // array, defaults to page
 tags: // defaults to page
 ---

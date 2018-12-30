@@ -23,7 +23,22 @@ module.exports = (function(eleventyConfig) {
     return collection.getAll().filter(function(item) {
       // Side-step tags and do your own filtering
       return "navigation" in item.data;
-    }).sort( function(a,b){ return a - b } );
+    }).sort( function(a,b){ return a.data.navigation - b.data.navigation } );
+  });
+  
+  // Return pages
+  eleventyConfig.addCollection("pages", function(collection) {
+    return collection.getFilteredByGlob([ "*.md", "pages/*.md" ]);
+  });
+  
+  // Return pages
+  eleventyConfig.addCollection("articles", function(collection) {
+    return collection.getFilteredByGlob([ "articles/*.md" ]);
+  });
+  
+  // Return pages
+  eleventyConfig.addCollection("tutorials", function(collection) {
+    return collection.getFilteredByGlob([ "tutorials/*.md" ]);
   });
   
   /**

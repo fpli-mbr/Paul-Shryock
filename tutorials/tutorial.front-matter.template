@@ -11,6 +11,7 @@ seo_title: // defaults to title
 seo_description: // defaults to excerpt
 
 permalink: // defaults to ./{{ title | slug }}/index.html
+content_type: // defaults to tutorial
 layout: // defaults to _layouts/tutorial
 body_class: [ ] // defaults to single tutorial
 tags: // defaults to tutorial
