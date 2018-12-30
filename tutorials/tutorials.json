@@ -1,0 +1,16 @@
+{
+	"topics": [
+		"Front End Development"
+	],
+	"skills": [
+		"HTML"
+	],
+
+	"permalink": "./{{ tags }}/{{ title | slug }}/index.html",
+	"layout": "_layouts/tutorial",
+	"body_class": [
+		"single",
+		"tutorial"
+	],
+	"tags": "tutorial"
+}

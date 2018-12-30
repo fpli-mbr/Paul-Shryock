@@ -4,7 +4,7 @@
 	],
 
 	"permalink": "./{{ title | slug }}/index.html",
-	"layout": "_layouts/single",
+	"layout": "_layouts/article",
 	"body_class": [
 		"single",
 		"article"
