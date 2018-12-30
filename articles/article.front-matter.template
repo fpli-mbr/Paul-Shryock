@@ -2,8 +2,8 @@
 title:
 excerpt:
 date: // example: 2018-12-02T00:00:00-5, defaults to creation page.date
-featured_image: '' // optional
-featured_image_alt: // optional
+cover_image: '' // optional
+cover_image_alt: // optional
 topics: [ ] // defaults to Front End Development
 
 seo_title: // defaults to title
