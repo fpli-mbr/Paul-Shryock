@@ -17,7 +17,7 @@ navigation: // number, optional
 
 permalink: // defaults to ./{{ slug }}/index.html
 content_type: // defaults to page
-layout: // defaults to _layouts/page
+layout: // defaults to page
 body_class: [ ] // array, defaults to page
 tags: // defaults to page
 ---

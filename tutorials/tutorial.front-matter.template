@@ -14,7 +14,7 @@ short_title: // optional, doesn't display, no default
 
 permalink: // defaults to ./{{ title | slug }}/index.html
 content_type: // defaults to tutorial
-layout: // defaults to _layouts/tutorial
+layout: // defaults to tutorial
 body_class: [ ] // array, defaults to single tutorial
 tags: // defaults to tutorial
 ---

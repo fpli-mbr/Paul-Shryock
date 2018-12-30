@@ -12,7 +12,3 @@ body_class: [
 	articles
 ]
 ---
-
-{% for article in collections.articles %}
-- [{{ article.data.title }}]({{ article.url }})
-{% endfor %}

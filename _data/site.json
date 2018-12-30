@@ -18,7 +18,7 @@
     "url": "https://pshry.com/"
   },
 
-  "layout": "_layouts/page",
+  "layout": "page",
   "body_class": "site",
 
   "copyright": "&copy {{ 'now' | date: '%Y' }} Paul Shryock. All rights reserved."

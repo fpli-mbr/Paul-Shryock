@@ -8,7 +8,7 @@
 
 	"permalink": "./{{ title | slug }}/index.html",
 	"content_type": "tutorial",
-	"layout": "_layouts/tutorial",
+	"layout": "tutorial",
 	"body_class": [
 		"single",
 		"tutorial"
