@@ -1,17 +1,16 @@
 ---
 title: Sitemap
+slug: sitemap
+date: 2019-01-01T00:00:00-5
 
 seo_title: Sitemap | Paul Shryock
 
 navigation: 4
 
-content_type: page
-layout: _layouts/page
 body_class: [
 	page,
 	sitemap
 ]
-tags: page
 ---
 
 **All**

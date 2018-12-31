@@ -5,6 +5,13 @@
 
 Reboot of my personal website, [pshry.com](https://pshry.com/). Starting from scratch without reinventing the wheel.
 
+## Content Types
+
+- page
+- archive
+- article
+- tutorial
+
 ## Links
 
 - Project homepage: [https://paulshryock.github.io/Paul-Shryock/](https://paulshryock.github.io/Paul-Shryock/)

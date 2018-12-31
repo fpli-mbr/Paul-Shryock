@@ -20,6 +20,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 0.1.0 - 2018-12-28 - Development
 
 ### Added
-- Add page, article, tutorial content types
-- Add home, about, contact, 404 pages
-- Add Lorem Ipsum article
+- Add page, archive, article, tutorial content types
+- Add home, about, contact, 404, offline pages
+- Add dynamic navigation
