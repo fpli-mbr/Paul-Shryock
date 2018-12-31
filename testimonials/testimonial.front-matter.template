@@ -2,7 +2,9 @@
 title:
 excerpt:
 date: // example: 2018-12-02T00:00:00-5, defaults to creation page.date
-topics: [ ] // defaults to Front End Development
+individual:
+company: // optional
+project: [ ] // array, optional
 skills: [ ] // array, defaults to HTML
 skill_icon: // optional, TODO: Make this an array?
 skill_icon_alt: // optional, TODO: Make this an array?
@@ -13,8 +15,8 @@ seo_description: // defaults to excerpt
 short_title: // optional, doesn't display, no default
 
 permalink: // defaults to ./{{ title | slug }}/index.html
-content_type: // defaults to tutorial
-layout: // defaults to tutorial
-body_class: [ ] // array, defaults to single tutorial
+content_type: // defaults to testimonial
+layout: // defaults to testimonial
+body_class: [ ] // array, defaults to single testimonial
 tags: [ ] // array, doesn't display, no default
 ---
