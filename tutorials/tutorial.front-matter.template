@@ -16,5 +16,5 @@ permalink: // defaults to ./{{ title | slug }}/index.html
 content_type: // defaults to tutorial
 layout: // defaults to tutorial
 body_class: [ ] // array, defaults to single tutorial
-tags: // defaults to tutorial
+tags: [ ] // array, doesn't display, no default
 ---
