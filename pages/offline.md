@@ -1,15 +1,14 @@
 ---
 title: Offline
+slug: offline
+date: 2019-01-01T00:00:00-5
 
 seo_title: Paul Shryock is offline
 
-content_type: page
-layout: page
 body_class: [
 	page,
 	offline
 ]
-tags: page
 ---
 
 The Internet is down. Here's the offline page.
