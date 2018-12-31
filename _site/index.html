@@ -48,7 +48,7 @@
 		<nav role="navigation" class="container navigation">
 			<ul>
 			
-				<li><a href="/">Home</a></li>
+				<li><a href="/.">Home</a></li>
 			
 				<li><a href="/about">About</a></li>
 			
@@ -78,5 +78,12 @@
 		</footer><!-- .container .site-footer -->
 
 		<script type="text/javascript" src="js/script.js" async></script>
+		
+			<script type="text/javascript" async>
+				let environment = 'development',
+						capitalizedEnvironment = environment.charAt(0).toUpperCase() + environment.substr(1);
+				console.log( capitalizedEnvironment + ' environment' );
+			</script
+		
   </body>
 </html>
