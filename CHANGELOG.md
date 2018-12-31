@@ -21,5 +21,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add page, archive, article, tutorial content types
-- Add home, about, contact, 404, offline pages
+- Add home, about, contact, 404, offline, sitemap pages
 - Add dynamic navigation

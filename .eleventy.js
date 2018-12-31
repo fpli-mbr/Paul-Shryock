@@ -34,11 +34,13 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('global', '_globals/global');
 	eleventyConfig.addLayoutAlias('page', '_layouts/page');
 	eleventyConfig.addLayoutAlias('archive', '_layouts/archive');
-	eleventyConfig.addLayoutAlias('expertise', '_layouts/expertise');
 	eleventyConfig.addLayoutAlias('article', '_layouts/article');
 	eleventyConfig.addLayoutAlias('articles', '_layouts/articles');
 	eleventyConfig.addLayoutAlias('tutorial', '_layouts/tutorial');
 	eleventyConfig.addLayoutAlias('tutorials', '_layouts/tutorials');
+	eleventyConfig.addLayoutAlias('expertise', '_layouts/expertise');
+	eleventyConfig.addLayoutAlias('testimonial', '_layouts/testimonial');
+	eleventyConfig.addLayoutAlias('testimonials', '_layouts/testimonials');
 	
 	/**
 		* Add custom collections
@@ -99,6 +101,13 @@ module.exports = (function(eleventyConfig) {
 		});
 	});
 	
+	// Return testimonials
+	eleventyConfig.addCollection("testimonials", function(collection) {
+		return collection.getAll().filter(function(item) {
+			return item.data.content_type == "testimonial";
+		});
+	});
+	
 	/**
 		* Copy static assets
 		*/
@@ -108,11 +117,7 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("img");
 	
 	return {
-		"passthroughFileCopy": true,
-		
-    "dataTemplateEngine": "liquid",
-		"markdownTemplateEngine": "liquid",
-		"htmlTemplateEngine": "liquid"
+		"passthroughFileCopy": true
 	};
 
 });
