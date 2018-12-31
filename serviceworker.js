@@ -7,7 +7,7 @@ addEventListener('install', installEvent => {
     caches.open('Offline')
     .then( OfflineCache => {
       OfflineCache.addAll([
-       '/offline.html',
+       '/offline',
        '/css/style.css',
        '/js/script.js'
       ]); // end addAll
@@ -36,7 +36,7 @@ addEventListener('fetch', fetchEvent => {
          // and it's a request for a web page
          if (request.headers.get('Accept').includes('text/html')) {
            // show the custom offline page instead
-           return caches.match('/offline.html');
+           return caches.match('/offline');
          } // end if
        } // end if/else
      }) // end match.then
