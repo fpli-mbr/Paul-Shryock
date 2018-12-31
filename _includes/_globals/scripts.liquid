@@ -1,1 +1,8 @@
 		<script type="text/javascript" src="js/script.js" async></script>
+		{% if "development" == server.environment %}
+			<script type="text/javascript" async>
+				let environment = '{{ server.environment }}',
+						capitalizedEnvironment = environment.charAt(0).toUpperCase() + environment.substr(1);
+				console.log( capitalizedEnvironment + ' environment' );
+			</script
+		{% endif %}

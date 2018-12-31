@@ -108,10 +108,11 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("img");
 	
 	return {
-		passthroughFileCopy: true,
-
-		markdownTemplateEngine: "liquid",
-		htmlTemplateEngine: "liquid"
+		"passthroughFileCopy": true,
+		
+    "dataTemplateEngine": "liquid",
+		"markdownTemplateEngine": "liquid",
+		"htmlTemplateEngine": "liquid"
 	};
 
 });

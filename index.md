@@ -6,7 +6,7 @@ seo_title: Paul Shryock | Front End Developer & Web Designer
 navigation: 1
 
 content_type: page
-layout: _layouts/page
+layout: page
 body_class: [
 	page,
 	home
