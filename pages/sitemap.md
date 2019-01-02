@@ -13,6 +13,12 @@ body_class: [
 ]
 ---
 
+**Everything**
+
+{% for content in collections.everything %}
+- [{{ content.data.title }}]({{ content.url }})
+{% endfor %}
+
 **All**
 
 {% for content in collections.all %}

@@ -54,7 +54,7 @@ module.exports = (function(eleventyConfig) {
 	// Return all content except archives
 	eleventyConfig.addCollection("all", function(collection) {
 		return collection.getAll().filter(function(item) {
-			return item.data.content_type !== "archive";
+			return item.data.content_type !== "archive" && item.data.content_type !== "search-results";
 		});
 	});
 	
@@ -107,6 +107,40 @@ module.exports = (function(eleventyConfig) {
 			return item.data.content_type == "testimonial";
 		});
 	});
+
+	// Return search index
+  eleventyConfig.addCollection("searchIndex", function(collection) {
+
+  	let searchResults = collection.getAll().filter(function(item) {
+			return	( item.data.slug !== "search-results" ) &&
+							( item.data.slug !== "sitemap" ) &&
+							( item.data.slug !== "404" ) &&
+							( item.data.slug !== "offline" );
+		});
+
+		return searchResults.map(result => {
+  		return {
+  			title: result.data.title,
+  			excerpt: result.data.excerpt,
+  			slug: result.data.slug,
+  			date: result.data.date,
+  			topics: result.data.topics,
+  			seo_title: result.data.seo_title,
+  			seo_description: result.data.seo_description,
+  			display_title: result.data.display_title,
+  			nav_title: result.data.nav_title,
+  			navigation: result.data.navigation,
+  			permalink: result.data.permalink,
+  			content_type: result.data.content_type,
+  			tags: result.data.tags,
+  			inputPath: result.inputPath,
+  			outputPath: result.outputPath,
+  			templateContent: result.templateContent,
+  			url: result.url,
+  		}
+  	});
+
+  });
 	
 	/**
 		* Copy static assets
