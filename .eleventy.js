@@ -32,8 +32,9 @@ module.exports = (function(eleventyConfig) {
 		*/
 
 	eleventyConfig.addLayoutAlias('global', '_globals/global');
-	eleventyConfig.addLayoutAlias('page', '_layouts/page');
+	eleventyConfig.addLayoutAlias('single', '_layouts/single');
 	eleventyConfig.addLayoutAlias('archive', '_layouts/archive');
+	eleventyConfig.addLayoutAlias('page', '_layouts/page');
 	eleventyConfig.addLayoutAlias('article', '_layouts/article');
 	eleventyConfig.addLayoutAlias('articles', '_layouts/articles');
 	eleventyConfig.addLayoutAlias('tutorial', '_layouts/tutorial');

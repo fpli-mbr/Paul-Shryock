@@ -1,0 +1,9 @@
+{
+	"permalink": "./{{ title | slug }}/index.html",
+	"content_type": "form",
+	"layout": "form",
+	"body_class": [
+		"single",
+		"form"
+	]
+}
