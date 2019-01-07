@@ -11,4 +11,6 @@ layout: global
 				{{ content }}
 			</ul><!-- .container .posts -->
 
-{% include _globals/pagination %}
+{% if pagination %}
+	{% include _globals/pagination %}
+{% endif %}

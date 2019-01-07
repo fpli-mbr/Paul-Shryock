@@ -13,22 +13,28 @@ body_class: [
 ]
 ---
 
+**Everything**
+
+{% for content in collections.everything %}
+- [{{ content.data.title }}]({{ content.url }})
+{% endfor %}
+
 **All**
 
 {% for content in collections.all %}
 - [{{ content.data.title }}]({{ content.url }})
 {% endfor %}
 
-**Pages**
-
-{% for page in collections.pages %}
-- [{{ page.data.title }}]({{ page.url }})
-{% endfor %}
-
 **Archives**
 
 {% for archive in collections.archives %}
 - [{{ archive.data.title }}]({{ archive.url }})
+{% endfor %}
+
+**Pages**
+
+{% for page in collections.pages %}
+- [{{ page.data.title }}]({{ page.url }})
 {% endfor %}
 
 **Articles**
@@ -47,4 +53,16 @@ body_class: [
 
 {% for item in collections.expertise %}
 - [{{ item.data.title }}]({{ item.url }})
+{% endfor %}
+
+**Testimonials**
+
+{% for testimonial in collections.testimonials %}
+- [{{ testimonial.data.title }}]({{ testimonial.url }})
+{% endfor %}
+
+**Case Studies**
+
+{% for case_study in collections.case_studies %}
+- [{{ case_study.data.title }}]({{ case_study.url }})
 {% endfor %}

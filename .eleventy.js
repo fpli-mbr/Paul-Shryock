@@ -32,8 +32,10 @@ module.exports = (function(eleventyConfig) {
 		*/
 
 	eleventyConfig.addLayoutAlias('global', '_globals/global');
-	eleventyConfig.addLayoutAlias('page', '_layouts/page');
+	eleventyConfig.addLayoutAlias('single', '_layouts/single');
 	eleventyConfig.addLayoutAlias('archive', '_layouts/archive');
+	eleventyConfig.addLayoutAlias('page', '_layouts/page');
+	eleventyConfig.addLayoutAlias('form', '_layouts/form');
 	eleventyConfig.addLayoutAlias('article', '_layouts/article');
 	eleventyConfig.addLayoutAlias('articles', '_layouts/articles');
 	eleventyConfig.addLayoutAlias('tutorial', '_layouts/tutorial');
@@ -41,6 +43,8 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('expertise', '_layouts/expertise');
 	eleventyConfig.addLayoutAlias('testimonial', '_layouts/testimonial');
 	eleventyConfig.addLayoutAlias('testimonials', '_layouts/testimonials');
+	eleventyConfig.addLayoutAlias('case-study', '_layouts/case-study');
+	eleventyConfig.addLayoutAlias('case-studies', '_layouts/case-studies');
 	
 	/**
 		* Add custom collections
@@ -54,7 +58,7 @@ module.exports = (function(eleventyConfig) {
 	// Return all content except archives
 	eleventyConfig.addCollection("all", function(collection) {
 		return collection.getAll().filter(function(item) {
-			return item.data.content_type !== "archive";
+			return item.data.content_type !== "archive" && item.data.content_type !== "search-results";
 		});
 	});
 	
@@ -107,6 +111,218 @@ module.exports = (function(eleventyConfig) {
 			return item.data.content_type == "testimonial";
 		});
 	});
+	
+	// Return case studies
+	eleventyConfig.addCollection("case_studies", function(collection) {
+		return collection.getAll().filter(function(item) {
+			return item.data.content_type == "case-study";
+		});
+	});
+	
+	// Return API navigation
+	eleventyConfig.addCollection("api_navigation", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return "navigation" in item.data;
+		}).sort( function(a,b){ return a.data.navigation - b.data.navigation } );
+
+		return items.map(item => {
+			return {
+  			title: item.data.title,
+  			navigation: item.data.navigation,
+			};
+		});
+
+	});
+	
+	// Return API pages
+	eleventyConfig.addCollection("api_pages", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return item.data.content_type == "page";
+		});
+
+		return items.map(item => {
+			return {
+  			title: item.data.title,
+  			seo_title: item.data.seo_title,
+  			display_title: item.data.display_title,
+  			nav_title: item.data.nav_title,
+  			excerpt: item.data.excerpt,
+  			seo_description: item.data.seo_description,
+  			date: item.data.date,
+  			navigation: item.data.navigation,
+  			content_type: item.data.content_type,
+  			topics: item.data.topics,
+  			tags: item.data.tags,
+  			inputPath: item.inputPath,
+  			slug: item.data.slug,
+  			permalink: item.data.permalink,
+  			url: item.url,
+  			outputPath: item.outputPath,
+  			content: item.templateContent,
+			};
+		});
+
+	});
+	
+	// Return API articles
+	eleventyConfig.addCollection("api_articles", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return item.data.content_type == "article";
+		});
+
+		return items.map(item => {
+			return {
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
+			};
+		});
+
+	});
+	
+	// Return API tutorials
+	eleventyConfig.addCollection("api_tutorials", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return item.data.content_type == "tutorial";
+		});
+
+		return items.map(item => {
+			return {
+  			title: item.data.title,
+  			seo_title: item.data.seo_title,
+  			display_title: item.data.display_title,
+  			nav_title: item.data.nav_title,
+  			excerpt: item.data.excerpt,
+  			seo_description: item.data.seo_description,
+  			date: item.data.date,
+  			navigation: item.data.navigation,
+  			content_type: item.data.content_type,
+  			topics: item.data.topics,
+  			tags: item.data.tags,
+  			inputPath: item.inputPath,
+  			slug: item.data.slug,
+  			permalink: item.data.permalink,
+  			url: item.url,
+  			outputPath: item.outputPath,
+  			content: item.templateContent,
+			};
+		});
+
+	});
+	
+	// Return API testimonials
+	eleventyConfig.addCollection("api_testimonials", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return item.data.content_type == "testimonial";
+		});
+
+		return items.map(item => {
+			return {
+  			title: item.data.title,
+  			seo_title: item.data.seo_title,
+  			display_title: item.data.display_title,
+  			nav_title: item.data.nav_title,
+  			excerpt: item.data.excerpt,
+  			seo_description: item.data.seo_description,
+  			date: item.data.date,
+  			navigation: item.data.navigation,
+  			content_type: item.data.content_type,
+  			topics: item.data.topics,
+  			tags: item.data.tags,
+  			inputPath: item.inputPath,
+  			slug: item.data.slug,
+  			permalink: item.data.permalink,
+  			url: item.url,
+  			outputPath: item.outputPath,
+  			content: item.templateContent,
+			};
+		});
+
+	});
+	
+	// Return API case studies
+	eleventyConfig.addCollection("api_case_studies", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return item.data.content_type == "case-study";
+		});
+
+		return items.map(item => {
+			return {
+  			title: item.data.title,
+  			seo_title: item.data.seo_title,
+  			display_title: item.data.display_title,
+  			nav_title: item.data.nav_title,
+  			excerpt: item.data.excerpt,
+  			seo_description: item.data.seo_description,
+  			date: item.data.date,
+  			navigation: item.data.navigation,
+  			content_type: item.data.content_type,
+  			topics: item.data.topics,
+  			tags: item.data.tags,
+  			inputPath: item.inputPath,
+  			slug: item.data.slug,
+  			permalink: item.data.permalink,
+  			url: item.url,
+  			outputPath: item.outputPath,
+  			content: item.templateContent,
+			};
+		});
+
+	});
+
+	// Return search index
+  eleventyConfig.addCollection("api_searchIndex", function(collection) {
+
+  	let items = collection.getAll().filter(function(item) {
+			return	( item.data.content_type !== "api" ) &&
+							( item.data.slug !== "sitemap" ) &&
+							( item.data.slug !== "404" ) &&
+							( item.data.slug !== "offline" );
+		});
+
+		return items.map(item => {
+  		return {
+  			title: item.data.title,
+  			seo_title: item.data.seo_title,
+  			display_title: item.data.display_title,
+  			nav_title: item.data.nav_title,
+  			excerpt: item.data.excerpt,
+  			seo_description: item.data.seo_description,
+  			date: item.data.date,
+  			navigation: item.data.navigation,
+  			content_type: item.data.content_type,
+  			topics: item.data.topics,
+  			tags: item.data.tags,
+  			inputPath: item.inputPath,
+  			slug: item.data.slug,
+  			permalink: item.data.permalink,
+  			url: item.url,
+  			outputPath: item.outputPath,
+  			content: item.templateContent,
+  		};
+  	});
+
+  });
 	
 	/**
 		* Copy static assets

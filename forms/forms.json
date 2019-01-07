@@ -1,0 +1,14 @@
+{
+	"method": "post",
+	"action": ".",
+	"permalink": "./{{ title | slug }}/index.html",
+	"content_type": "form",
+	"layout": "form",
+	"body_class": [
+		"single",
+		"form"
+	],
+	"form_class": [
+		"container"
+	]
+}
