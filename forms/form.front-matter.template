@@ -10,9 +10,13 @@ seo_description: // defaults to excerpt
 
 short_title: // optional, doesn't display, no default
 
+method: // get or post, defaults to post
+action: // absolute or relative url, defaults to .
+
 permalink: // defaults to ./{{ title | slug }}/index.html
 content_type: // defaults to form
 layout: // defaults to form
 body_class: [ ] // array, defaults to single form
+form_class: [ ] // array, defaults to container
 tags: [ ] // array, doesn't display, no default
 ---
