@@ -14,6 +14,7 @@ These are the existing content types:
 - article
 - tutorial
 - testimonial
+- case-study
 
 Single content type pages (i.e., an article) will have the `.single` body class, and archive content type pages (i.e., an articles archive) will have the `.archive` body class. All posts of that content type will use the `.post` class.
 
