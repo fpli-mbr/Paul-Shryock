@@ -17,11 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Roadmap
 
-### Changed
-- Update API JSON routes (i.e., `/api/pages.json` -> `/api/pages`)
-- Find out if JSON files can first be interpreted by liquid, or replace JSON files with template files if it makes sense (in order to use template tags in JSON)
+### Added
 - Add pagination
 - Add taxonomy pages and templates (i.e., tag, tags, category, and categories)
+
+### Changed
+- Update API JSON routes (i.e., `/api/pages.json` -> `/api/pages`)
+- Find out if folder JSON files can first be interpreted by liquid, or replace JSON files with template files if it makes sense (in order to use template tags in JSON)
 
 ## 0.1.0 - 2019-01-01 - Development
 
