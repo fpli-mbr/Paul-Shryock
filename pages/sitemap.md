@@ -66,3 +66,9 @@ body_class: [
 {% for case_study in collections.case_studies %}
 - [{{ case_study.data.title }}]({{ case_study.url }})
 {% endfor %}
+
+**Portfolio**
+
+{% for project in collections.portfolio %}
+- [{{ project.data.title }}]({{ project.url }})
+{% endfor %}

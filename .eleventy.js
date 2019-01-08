@@ -45,6 +45,8 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('testimonials', '_layouts/testimonials');
 	eleventyConfig.addLayoutAlias('case-study', '_layouts/case-study');
 	eleventyConfig.addLayoutAlias('case-studies', '_layouts/case-studies');
+	eleventyConfig.addLayoutAlias('project', '_layouts/project');
+	eleventyConfig.addLayoutAlias('portfolio', '_layouts/portfolio');
 	
 	/**
 		* Add custom collections
@@ -119,6 +121,13 @@ module.exports = (function(eleventyConfig) {
 		});
 	});
 	
+	// Return portfolio
+	eleventyConfig.addCollection("portfolio", function(collection) {
+		return collection.getAll().filter(function(item) {
+			return item.data.content_type == "project";
+		});
+	});
+	
 	// Return API navigation
 	eleventyConfig.addCollection("api_navigation", function(collection) {
 
@@ -144,23 +153,24 @@ module.exports = (function(eleventyConfig) {
 
 		return items.map(item => {
 			return {
-  			title: item.data.title,
-  			seo_title: item.data.seo_title,
-  			display_title: item.data.display_title,
-  			nav_title: item.data.nav_title,
-  			excerpt: item.data.excerpt,
-  			seo_description: item.data.seo_description,
-  			date: item.data.date,
-  			navigation: item.data.navigation,
-  			content_type: item.data.content_type,
-  			topics: item.data.topics,
-  			tags: item.data.tags,
-  			inputPath: item.inputPath,
-  			slug: item.data.slug,
-  			permalink: item.data.permalink,
-  			url: item.url,
-  			outputPath: item.outputPath,
-  			content: item.templateContent,
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				skills: item.data.skills,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
 			};
 		});
 
@@ -185,6 +195,7 @@ module.exports = (function(eleventyConfig) {
 				navigation: item.data.navigation,
 				content_type: item.data.content_type,
 				topics: item.data.topics,
+				skills: item.data.skills,
 				tags: item.data.tags,
 				inputPath: item.inputPath,
 				slug: item.data.slug,
@@ -206,23 +217,24 @@ module.exports = (function(eleventyConfig) {
 
 		return items.map(item => {
 			return {
-  			title: item.data.title,
-  			seo_title: item.data.seo_title,
-  			display_title: item.data.display_title,
-  			nav_title: item.data.nav_title,
-  			excerpt: item.data.excerpt,
-  			seo_description: item.data.seo_description,
-  			date: item.data.date,
-  			navigation: item.data.navigation,
-  			content_type: item.data.content_type,
-  			topics: item.data.topics,
-  			tags: item.data.tags,
-  			inputPath: item.inputPath,
-  			slug: item.data.slug,
-  			permalink: item.data.permalink,
-  			url: item.url,
-  			outputPath: item.outputPath,
-  			content: item.templateContent,
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				skills: item.data.skills,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
 			};
 		});
 
@@ -237,23 +249,24 @@ module.exports = (function(eleventyConfig) {
 
 		return items.map(item => {
 			return {
-  			title: item.data.title,
-  			seo_title: item.data.seo_title,
-  			display_title: item.data.display_title,
-  			nav_title: item.data.nav_title,
-  			excerpt: item.data.excerpt,
-  			seo_description: item.data.seo_description,
-  			date: item.data.date,
-  			navigation: item.data.navigation,
-  			content_type: item.data.content_type,
-  			topics: item.data.topics,
-  			tags: item.data.tags,
-  			inputPath: item.inputPath,
-  			slug: item.data.slug,
-  			permalink: item.data.permalink,
-  			url: item.url,
-  			outputPath: item.outputPath,
-  			content: item.templateContent,
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				skills: item.data.skills,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
 			};
 		});
 
@@ -268,23 +281,56 @@ module.exports = (function(eleventyConfig) {
 
 		return items.map(item => {
 			return {
-  			title: item.data.title,
-  			seo_title: item.data.seo_title,
-  			display_title: item.data.display_title,
-  			nav_title: item.data.nav_title,
-  			excerpt: item.data.excerpt,
-  			seo_description: item.data.seo_description,
-  			date: item.data.date,
-  			navigation: item.data.navigation,
-  			content_type: item.data.content_type,
-  			topics: item.data.topics,
-  			tags: item.data.tags,
-  			inputPath: item.inputPath,
-  			slug: item.data.slug,
-  			permalink: item.data.permalink,
-  			url: item.url,
-  			outputPath: item.outputPath,
-  			content: item.templateContent,
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				skills: item.data.skills,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
+			};
+		});
+
+	});
+	
+	// Return API portfolio
+	eleventyConfig.addCollection("api_portfolio", function(collection) {
+
+		let items = collection.getAll().filter(function(item) {
+			return item.data.content_type == "project";
+		});
+
+		return items.map(item => {
+			return {
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				skills: item.data.skills,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
 			};
 		});
 
@@ -302,23 +348,24 @@ module.exports = (function(eleventyConfig) {
 
 		return items.map(item => {
   		return {
-  			title: item.data.title,
-  			seo_title: item.data.seo_title,
-  			display_title: item.data.display_title,
-  			nav_title: item.data.nav_title,
-  			excerpt: item.data.excerpt,
-  			seo_description: item.data.seo_description,
-  			date: item.data.date,
-  			navigation: item.data.navigation,
-  			content_type: item.data.content_type,
-  			topics: item.data.topics,
-  			tags: item.data.tags,
-  			inputPath: item.inputPath,
-  			slug: item.data.slug,
-  			permalink: item.data.permalink,
-  			url: item.url,
-  			outputPath: item.outputPath,
-  			content: item.templateContent,
+				title: item.data.title,
+				seo_title: item.data.seo_title,
+				display_title: item.data.display_title,
+				nav_title: item.data.nav_title,
+				excerpt: item.data.excerpt,
+				seo_description: item.data.seo_description,
+				date: item.data.date,
+				navigation: item.data.navigation,
+				content_type: item.data.content_type,
+				topics: item.data.topics,
+				skills: item.data.skills,
+				tags: item.data.tags,
+				inputPath: item.inputPath,
+				slug: item.data.slug,
+				permalink: item.data.permalink,
+				url: item.url,
+				outputPath: item.outputPath,
+				content: item.templateContent,
   		};
   	});
 
