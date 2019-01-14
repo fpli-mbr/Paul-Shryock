@@ -32,4 +32,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add home, about, contact, 404, offline, sitemap pages
 - Add dynamic navigation
 - Add API json files
-- Add cms
+- Add CMS
