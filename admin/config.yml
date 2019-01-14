@@ -39,7 +39,7 @@ collections:
   - name: "tutorials" # Used in routes, e.g., /admin/collections/tutorials
     label: "Tutorials" # Used in the UI
     label_singular: "Tutorial" # singular label for certain elements in the editor
-    description: "This is the Tutorials archive excerpt.
+    description: "This is the Tutorials archive excerpt."
     folder: "tutorials" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     format: "frontmatter"
