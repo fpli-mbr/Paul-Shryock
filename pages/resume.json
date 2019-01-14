@@ -7,70 +7,88 @@
 	"experience": {
 		"employers": [
 			{
-				"company": "",
+				"company": "Paul Shryock Consulting",
+				"role": "Lead Front End Developer and Web Designer",
+				"start_date": "2009-02-01",
+				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+			},
+			{
+				"company": "Realogy Holdings Corp.",
+				"role": "Lead Front End Developer",
+				"start_date": "2017-08-12",
+				"responsibilities": "Responsible for owning multiple customer-facing marketing sites and subdomains, coding pages based on designs/specs from team of designers, assist with technical feasibility of UI/UX in the design/readability of content across devices, and ensure sites are performing well and work as intended across all devices and browser types. Focusing on improving site performance (load times), optimizing all views for speed and scalability, improving the user experience, and improving conversion rates."
+			},
+			{
+				"company": "Palantir Technologies",
+				"role": "Web Developer",
+				"start_date": "2018-09-04",
+				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+			},
+			{
+				"company": "McCann Echo",
+				"role": "Freelance Graphic Designer",
+				"start_date": "2016-10-01",
+				"end_date": "2017-06-01",
+				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+			},
+			{
+				"company": "Ogilvy Health North America",
+				"role": "Freelance Interactive Art Director",
+				"start_date": "2016-12-01",
+				"end_date": "2017-05-01",
+				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+			},
+			{
+				"company": "OSG Billing Services",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
+				"company": "Kaast Machine Tools",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
+				"company": "Spirit Media Group",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
+				"company": "Sports Reports Press",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
+				"company": "Barksdale School Portraits",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
+				"company": "The Vine Christian Shoppe",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
+				"company": "Folsom Tool & Mold Co",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
 			},
 			{
-				"company": "",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
-			},
-			{
-				"company": "",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
-			},
-			{
-				"company": "",
+				"company": "The Communitarian",
 				"role": "",
 				"start_date": "",
 				"end_date": "",
