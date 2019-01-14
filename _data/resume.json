@@ -1,0 +1,146 @@
+{
+	"profile": {
+		"name": "Paul Shryock",
+		"title": "Lead Front End Developer",
+		"statement": ""
+	},
+	"experience": {
+		"employers": [
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+			{
+				"company": "",
+				"role": "",
+				"start_date": "",
+				"end_date": "",
+				"responsibilities": ""
+			},
+		],
+	},
+	"education": {
+		"schools": [
+			{
+				"school": "",
+				"degree": "",
+				"start_date": "",
+				"end_date": "",
+				"details": ""
+			},
+			{
+				"school": "",
+				"degree": "",
+				"start_date": "",
+				"end_date": "",
+				"details": ""
+			},
+			{
+				"school": "",
+				"degree": "",
+				"start_date": "",
+				"end_date": "",
+				"details": ""
+			},
+			{
+				"school": "",
+				"degree": "",
+				"start_date": "",
+				"end_date": "",
+				"details": ""
+			},
+			{
+				"school": "",
+				"degree": "",
+				"start_date": "",
+				"end_date": "",
+				"details": ""
+			},
+			{
+				"school": "",
+				"degree": "",
+				"start_date": "",
+				"end_date": "",
+				"details": ""
+			},
+		]
+	},
+	"skills": "",
+	"software": "",
+	"contact": {
+		"email": "paul@pshry.com",
+		"website": "https://pshry.com",
+		"phone": "(610) 322-6943",
+		"location": {
+			"address": "160 Myrtle Ave",
+			"city": "Cedar Grove",
+			"state": "NJ",
+			"zip": "07009"
+		},
+		"links": {
+			"linkedin": "https://www.linkedin.com/in/paulshryock/",
+			"github": "https://github.com/paulshryock",
+			"dribbble": "https://dribbble.com/pshry",
+			"behance": "https://www.behance.net/pshry"
+		}
+	},
+}

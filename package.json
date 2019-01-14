@@ -2,6 +2,7 @@
   "name": "paul-shryock",
   "version": "0.1.0",
   "description": "Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.",
+  "private": true,
   "scripts": {
     "11ty": "npx eleventy",
     "serve": "npx eleventy --serve",
