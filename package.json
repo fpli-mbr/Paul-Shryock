@@ -14,7 +14,7 @@
     "development": "npm run-script clean; ELEVENTY_ENV=development npx eleventy --serve",
     "staging": "npm run-script clean; ELEVENTY_ENV=staging npx eleventy",
     "production_old": "npm run-script clean; ELEVENTY_ENV=production npx eleventy",
-    "production": "if [ -e _site ]; then rm -R _site; fi; npx eleventy"
+    "production": "npx eleventy"
   },
   "repository": {
     "type": "git",
