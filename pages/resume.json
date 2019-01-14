@@ -75,8 +75,8 @@
 				"start_date": "",
 				"end_date": "",
 				"responsibilities": ""
-			},
-		],
+			}
+		]
 	},
 	"education": {
 		"schools": [
@@ -121,7 +121,7 @@
 				"start_date": "",
 				"end_date": "",
 				"details": ""
-			},
+			}
 		]
 	},
 	"skills": "",
@@ -142,5 +142,5 @@
 			"dribbble": "https://dribbble.com/pshry",
 			"behance": "https://www.behance.net/pshry"
 		}
-	},
+	}
 }
