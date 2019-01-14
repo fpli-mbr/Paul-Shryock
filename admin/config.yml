@@ -1,7 +1,7 @@
 # GitHub config
 backend:
-	name: git-gateway
-	branch: master # Branch to update (optional; defaults to master)
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
 
 # Allow drafts?
 publish_mode: editorial_workflow
@@ -13,45 +13,45 @@ public_folder: "/_site/img/uploads"
 display_url: https://shryart.com
 
 editor:
-	preview: true
+  preview: true
 
 # Collections
 collections:
-	- name: "articles" # Used in routes, e.g., /admin/collections/articles
-		label: "Articles" # Used in the UI
-		label_singular: "Article" # singular label for certain elements in the editor
-		description: "This is the Articles archive excerpt."
-		folder: "articles" # The path to the folder where the documents are stored
-		create: true # Allow users to create new documents in this collection
-		format: "frontmatter"
-		slug: "{{slug}}" # Filename template, e.g., title.md
-		fields: # The fields for each document, usually in front matter
-			- {label: "Title", name: "title", widget: "string"}
-			- {label: "SEO Title", name: "seo_title", widget: "string", required: false}
-			- {label: "Short Title", name: "short_title", widget: "string", required: false}
-			- {label: "Excerpt", name: "excerpt", widget: "string", required: false}
-			- {label: "SEO Description", name: "seo_description", widget: "string", required: false}
-			- {label: "Publish Date", name: "date", widget: "datetime"}
-			- {label: "Cover Image", name: "cover_image", widget: "image", required: false}
-			- {label: "Cover Image Alt Text", name: "cover_image_alt", widget: "string", required: false}
-			- {label: "Content", name: "body", widget: "markdown", required: false}
-			# TODO: Add Topics and Tags as arrays
-	- name: "tutorials" # Used in routes, e.g., /admin/collections/tutorials
-		label: "Tutorials" # Used in the UI
-		label_singular: "Tutorial" # singular label for certain elements in the editor
-		description: "This is the Tutorials archive excerpt.
-		folder: "tutorials" # The path to the folder where the documents are stored
-		create: true # Allow users to create new documents in this collection
-		format: "frontmatter"
-		slug: "{{slug}}" # Filename template, e.g., title.md
-		fields: # The fields for each document, usually in front matter
-			- {label: "Title", name: "title", widget: "string"}
-			- {label: "SEO Title", name: "seo_title", widget: "string", required: false}
-			- {label: "Short Title", name: "short_title", widget: "string", required: false}
-			- {label: "Excerpt", name: "excerpt", widget: "string", required: false}
-			- {label: "SEO Description", name: "seo_description", widget: "string", required: false}
-			- {label: "Publish Date", name: "date", widget: "datetime"}
-			- {label: "Skill Icon", name: "skill_icon", widget: "image", required: false}
-			- {label: "Skill Icon Alt Text", name: "skill_icon_alt", widget: "string", required: false}
-			- {label: "Content", name: "body", widget: "markdown", required: false}
-			# TODO: Add Topics and Skills as arrays
+  - name: "articles" # Used in routes, e.g., /admin/collections/articles
+    label: "Articles" # Used in the UI
+    label_singular: "Article" # singular label for certain elements in the editor
+    description: "This is the Articles archive excerpt."
+    folder: "articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    format: "frontmatter"
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+      - {label: "Short Title", name: "short_title", widget: "string", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "SEO Description", name: "seo_description", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
+      - {label: "Cover Image Alt Text", name: "cover_image_alt", widget: "string", required: false}
+      - {label: "Content", name: "body", widget: "markdown", required: false}
+      # TODO: Add Topics and Tags as arrays
+  - name: "tutorials" # Used in routes, e.g., /admin/collections/tutorials
+    label: "Tutorials" # Used in the UI
+    label_singular: "Tutorial" # singular label for certain elements in the editor
+    description: "This is the Tutorials archive excerpt.
+    folder: "tutorials" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    format: "frontmatter"
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+      - {label: "Short Title", name: "short_title", widget: "string", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "SEO Description", name: "seo_description", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Skill Icon", name: "skill_icon", widget: "image", required: false}
+      - {label: "Skill Icon Alt Text", name: "skill_icon_alt", widget: "string", required: false}
+      - {label: "Content", name: "body", widget: "markdown", required: false}
+      # TODO: Add Topics and Skills as arrays
