@@ -490,6 +490,12 @@ ol {
 	list-style: lower-roman;
 }
 
+/* Cascade override */
+.resume ul,
+.resume ol {
+	list-style: none;
+}
+
 /* TODO: Update and use, or remove these summary styles */
 
 /*summary {
@@ -1418,7 +1424,11 @@ dd,
 	padding: 0 0 0 2em;
 }
 
-
+/* Cascade override */
+.resume ul,
+.resume ol {
+	padding: 0;
+}
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 

@@ -15,12 +15,30 @@ body_class: [
 ]
 ---
 
-- Name: {{ resume.profile.name }}
-- Title: {{ resume.profile.title }}
-- Statement: {{ resume.profile.statement }}
+{{ profile.name }}
+
+{{ profile.title }}
+
+{{ profile.statement }}
 
 ## Experience
 
-- Name: {{ resume.profile.name }}
-- Title: {{ resume.profile.title }}
-- Statement: {{ resume.profile.statement }}
+{% for employer in experience.employers limit:5 %}
+
+- **{{ employer.role }}**  
+	{{ employer.company }} _({{ employer.start_date | date: '%B, %Y' }}{% if employer.end_date %}&ndash;{{ employer.end_date | date: '%Y' }}{% endif %})_
+
+	{{ employer.responsibilities }}
+
+{% endfor %}
+
+## Education
+
+{% for school in education.schools limit:5 %}
+
+- **{{ school.degree }}**  
+	{{ school.school }} _({{ school.start_date | date: '%B, %Y' }}{% if school.end_date %}&ndash;{{ school.end_date | date: '%Y' }}{% endif %})_
+
+	{{ school.details }}
+
+{% endfor %}
