@@ -378,10 +378,20 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("js");
 	eleventyConfig.addPassthroughCopy("img");
-	eleventyConfig.addPassthroughCopy("admin");
+	eleventyConfig.addPassthroughCopy("browserconfig.xml");
+	eleventyConfig.addPassthroughCopy("favicon.ico");
+	eleventyConfig.addPassthroughCopy("humans.txt");
+	eleventyConfig.addPassthroughCopy("manifest.json");
+	eleventyConfig.addPassthroughCopy("robots.txt");
+	eleventyConfig.addPassthroughCopy("serviceworker.js");
 	
 	return {
-		"passthroughFileCopy": true
+    passthroughFileCopy: true,
+
+		dir: {
+			input: "src",
+			output: "_site"
+		}
 	};
 
 });
