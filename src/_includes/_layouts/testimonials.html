@@ -2,15 +2,18 @@
 layout: archive
 ---
 
-			{% for testimonial in collections.testimonials %}
-			<li>
-				<article class="post">
-					<div class="post-content">
-						<blockquote>
-							<p>{{ testimonial.data.excerpt }}</p>
-							<cite>{{ testimonial.data.author }}</cite>
-						</blockquote>
-					</div><!-- .post-content -->
-				</article><!-- .post -->
-			</li>
+			{% for testimonial in collections.testimonials -%}
+
+			{% capture author_details %}{% if testimonial.data.author.title %}, <em>{{ testimonial.data.author.title }}</em>{% endif %}{% if testimonial.data.author.company %} at <strong>{{ testimonial.data.author.company }}</strong>{% endif %}{% endcapture -%}
+
+			<li class="post testimonial">
+				<article class="post-content">
+					<blockquote>
+						{{ testimonial.templateContent }}
+					</blockquote>
+					<cite>
+						{{ testimonial.data.author.name }}{{ author_details }}
+					</cite>
+				</article><!-- .post-content -->
+			</li><!-- .post .testimonial -->
 			{% endfor %}

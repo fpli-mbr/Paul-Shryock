@@ -3,7 +3,9 @@ title:
 excerpt:
 date: // example: 2019-01-01T00:00:00-5, defaults to creation page.date
 author:
-company: // optional
+    name:
+    title:
+    company:
 project: [ ] // array, optional
 skills: [ ] // array, defaults to HTML
 skill_icon: // optional, TODO: Make this an array?
