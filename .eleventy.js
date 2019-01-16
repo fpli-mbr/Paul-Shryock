@@ -375,15 +375,15 @@ module.exports = (function(eleventyConfig) {
 		* Copy static assets
 		*/
 	// requires `passthroughFileCopy: true` in the final `return`
-	eleventyConfig.addPassthroughCopy("css");
-	eleventyConfig.addPassthroughCopy("js");
-	eleventyConfig.addPassthroughCopy("img");
-	eleventyConfig.addPassthroughCopy("browserconfig.xml");
-	eleventyConfig.addPassthroughCopy("favicon.ico");
-	eleventyConfig.addPassthroughCopy("humans.txt");
-	eleventyConfig.addPassthroughCopy("manifest.json");
-	eleventyConfig.addPassthroughCopy("robots.txt");
-	eleventyConfig.addPassthroughCopy("serviceworker.js");
+	eleventyConfig.addPassthroughCopy("src/css");
+	eleventyConfig.addPassthroughCopy("src/js");
+	eleventyConfig.addPassthroughCopy("src/img");
+	eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
+	eleventyConfig.addPassthroughCopy("src/favicon.ico");
+	eleventyConfig.addPassthroughCopy("src/humans.txt");
+	eleventyConfig.addPassthroughCopy("src/manifest.json");
+	eleventyConfig.addPassthroughCopy("src/robots.txt");
+	eleventyConfig.addPassthroughCopy("src/serviceworker.js");
 	
 	return {
     passthroughFileCopy: true,
