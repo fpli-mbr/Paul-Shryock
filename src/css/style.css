@@ -520,7 +520,7 @@ q::before,
 
 q::after,
 .testimonial blockquote p:last-child::after {
-	content: close-quote;
+	content: '\00a0' close-quote;
 }
 
 /**
@@ -1514,7 +1514,8 @@ form div {
 }
 
 .single .post-header__image,
-.single .post-footer {
+.single .post-footer,
+.archive .post + .post {
 	margin: 4rem 0 0;
 }
 
