@@ -378,6 +378,7 @@ module.exports = (function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
+	eleventyConfig.addPassthroughCopy("admin"); // Bring the CMS too
 	eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
 	eleventyConfig.addPassthroughCopy("src/favicon.ico");
 	eleventyConfig.addPassthroughCopy("src/humans.txt");
