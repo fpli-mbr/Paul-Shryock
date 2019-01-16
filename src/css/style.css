@@ -66,7 +66,8 @@ body {
 }
 
 q,
-.pullquote {
+.pullquote,
+.testimonial blockquote {
 	font-family: "IBM Plex Serif", /* Ideal */
 		Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, /* Fit */ /* Common */
 		serif; /* Generic */
@@ -300,7 +301,6 @@ h5,
 h6,
 th,
 dt,
-cite,
 legend,
 footer p,
 .site-title,
@@ -513,11 +513,13 @@ q {
 	quotes: "“" "”" "‘" "’";
 }
 
-q:before {
+q::before,
+.testimonial blockquote p:first-child::before {
 	content: open-quote;
 }
 
-q:after {
+q::after,
+.testimonial blockquote p:last-child::after {
 	content: close-quote;
 }
 
@@ -973,7 +975,7 @@ kbd {
 }
 
 cite::before {
-	content: '--';
+	content: '\2014';
 }
 
 /**
@@ -1110,7 +1112,9 @@ nav li,
 .post-meta li,
 .navigation button,
 .button,
-.breadcrumb li + li::before {
+.breadcrumb li + li::before,
+.testimonial blockquote p:first-child::before,
+.testimonial blockquote p:last-child::after {
 	display: inline-block;
 }
 
@@ -1469,13 +1473,18 @@ article header p:first-of-type,
 
 /* rem */
 
+kbd,
+code,
 .pagination a {
 	margin: 0 0.125rem;
 }
 
-kbd,
-code {
-	margin: 0 0.125rem;
+.testimonial blockquote p:first-child::before {
+	margin: 0 0.125rem 0 0;
+}
+
+.testimonial blockquote p:first-child::after {
+	margin: 0 0 0 0.125rem;
 }
 
 .hamburger {
