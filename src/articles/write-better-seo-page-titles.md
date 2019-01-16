@@ -6,7 +6,7 @@ topics: [ Front End Development, SEO ]
 
 seo_title: Write Better SEO Page Titles and Rank Higher in Search Engines
 
-tags: [ legacy ]
+tags: [ legacy, rewrite ]
 ---
 
 Do you want more customers to find your website on page 1 of Google? In order to rank higher and reach more people, you need to [optimize each page for search engines]({{ site.permalink }}/seo-basics-2016/). This starts with writing better SEO page titles.
