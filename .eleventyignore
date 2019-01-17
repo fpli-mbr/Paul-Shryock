@@ -5,3 +5,4 @@ certs
 docs
 scratch
 *.template
+.github
