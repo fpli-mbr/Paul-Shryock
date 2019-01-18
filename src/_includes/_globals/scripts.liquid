@@ -1,17 +1,21 @@
-		<script type="text/javascript" src="js/script.js" async></script>
+		<script type="text/javascript" src="/js/script.js" async></script>
+		
 		{% if "development" == server.environment -%}
-			<script type="text/javascript" src="js/development.js" async></script>
-		{%- endif %}
 
-		<!-- Netlify CMS Identity -->
-		<script>
-		  if (window.netlifyIdentity) {
-		    window.netlifyIdentity.on("init", user => {
-		      if (!user) {
-		        window.netlifyIdentity.on("login", () => {
-		          document.location.href = "/admin/";
-		        });
-		      }
-		    });
-		  }
-		</script>
+			<!-- Load development scripts -->
+			<script type="text/javascript" src="/js/development.js" async></script>
+
+			<!-- Load Netlify CMS Identity -->
+			<script>
+				if (window.netlifyIdentity) {
+					window.netlifyIdentity.on("init", user => {
+						if (!user) {
+							window.netlifyIdentity.on("login", () => {
+								document.location.href = "/admin/";
+							});
+						}
+					});
+				}
+			</script>
+
+		{%- endif %}

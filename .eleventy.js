@@ -1,3 +1,5 @@
+const CleanCSS = require("clean-css");
+
 module.exports = (function(eleventyConfig) {
 	
 	/**
@@ -9,6 +11,7 @@ module.exports = (function(eleventyConfig) {
 		if (value) return 'site ' + value;
 	});
 
+	// Add timePosted filter
 	eleventyConfig.addLiquidFilter("timePosted", date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
@@ -26,6 +29,11 @@ module.exports = (function(eleventyConfig) {
 			return yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "") + ' ago';
 		}
 	});
+
+	// Add cssmin filter
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 	
 	/**
 		* Add layout aliases
@@ -54,13 +62,21 @@ module.exports = (function(eleventyConfig) {
 	
 	// Return all content including archives
 	eleventyConfig.addCollection("everything", function(collection) {
-		return collection.getAll();
+		return collection.getAll().filter(function(item) {
+			return	item.data.content_type !== "api" &&
+							item.data.content_type !== "cms" &&
+							item.data.content_type !== "css";
+		});
 	});
 	
 	// Return all content except archives
 	eleventyConfig.addCollection("all", function(collection) {
 		return collection.getAll().filter(function(item) {
-			return item.data.content_type !== "archive" && item.data.content_type !== "search-results";
+			return	item.data.content_type !== "api" &&
+							item.data.content_type !== "cms" &&
+							item.data.content_type !== "css" &&
+							item.data.content_type !== "archive" &&
+							item.data.content_type !== "search-results";
 		});
 	});
 	
@@ -375,9 +391,9 @@ module.exports = (function(eleventyConfig) {
 		* Copy static assets
 		*/
 	// requires `passthroughFileCopy: true` in the final `return`
-	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
+	eleventyConfig.addPassthroughCopy("src/fonts");
 	eleventyConfig.addPassthroughCopy("src/admin"); // Bring the CMS too
 	eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
 	eleventyConfig.addPassthroughCopy("src/favicon.ico");
