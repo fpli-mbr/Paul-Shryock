@@ -22,7 +22,7 @@ browser.init = function() {
 	* Customizes console.log()
 	*
 	*/
-browser.log = function ( message, color='black' ) {
+browser.log = function ( message, color = 'black' ) {
 	switch (color) {
 		case 'success':  
 			color = 'Green'

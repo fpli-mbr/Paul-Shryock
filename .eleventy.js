@@ -62,13 +62,21 @@ module.exports = (function(eleventyConfig) {
 	
 	// Return all content including archives
 	eleventyConfig.addCollection("everything", function(collection) {
-		return collection.getAll();
+		return collection.getAll().filter(function(item) {
+			return	item.data.content_type !== "api" &&
+							item.data.content_type !== "cms" &&
+							item.data.content_type !== "css";
+		});
 	});
 	
 	// Return all content except archives
 	eleventyConfig.addCollection("all", function(collection) {
 		return collection.getAll().filter(function(item) {
-			return item.data.content_type !== "archive" && item.data.content_type !== "search-results";
+			return	item.data.content_type !== "api" &&
+							item.data.content_type !== "cms" &&
+							item.data.content_type !== "css" &&
+							item.data.content_type !== "archive" &&
+							item.data.content_type !== "search-results";
 		});
 	});
 	
@@ -383,7 +391,6 @@ module.exports = (function(eleventyConfig) {
 		* Copy static assets
 		*/
 	// requires `passthroughFileCopy: true` in the final `return`
-	// eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/fonts");
