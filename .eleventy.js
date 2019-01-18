@@ -1,3 +1,5 @@
+const CleanCSS = require("clean-css");
+
 module.exports = (function(eleventyConfig) {
 	
 	/**
@@ -9,6 +11,7 @@ module.exports = (function(eleventyConfig) {
 		if (value) return 'site ' + value;
 	});
 
+	// Add timePosted filter
 	eleventyConfig.addLiquidFilter("timePosted", date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
@@ -26,6 +29,11 @@ module.exports = (function(eleventyConfig) {
 			return yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "") + ' ago';
 		}
 	});
+
+	// Add cssmin filter
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 	
 	/**
 		* Add layout aliases
@@ -375,7 +383,7 @@ module.exports = (function(eleventyConfig) {
 		* Copy static assets
 		*/
 	// requires `passthroughFileCopy: true` in the final `return`
-	eleventyConfig.addPassthroughCopy("src/css");
+	// eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/admin"); // Bring the CMS too
