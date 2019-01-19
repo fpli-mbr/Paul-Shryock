@@ -12,7 +12,7 @@ let browser = {};
 	* Initializes the main browser object
 	*
 	*/
-browser.init = function() {
+browser.init = () => {
 
 	browser.addEventListeners();
 
@@ -22,7 +22,7 @@ browser.init = function() {
 	* Customizes console.log()
 	*
 	*/
-browser.log = function ( message, color = 'black' ) {
+browser.log = ( message, color = 'black' ) => {
 	switch (color) {
 		case 'success':  
 			color = 'Green'
@@ -41,13 +41,14 @@ browser.log = function ( message, color = 'black' ) {
 	}
 	console.log( `%c${message}`, `color:${color}` )
 
+	// Example use:
 	// browser.log('Hello World!')
 	// browser.log('Success!', 'success')
 	// browser.log('Error!', 'error')
 	// browser.log('Warning!', 'warning')
 	// browser.log('Info...', 'info')
 
-	// These are available too:
+	// These are also natively available:
 	// console.error()
 	// console.warn()
 	// console.table()
@@ -57,7 +58,7 @@ browser.log = function ( message, color = 'black' ) {
 	* Swaps html element classes: `.no-js` to `.js`
 	*
 	*/
-browser.swapHTMLClasses = function() {
+browser.swapHTMLClasses = () => {
 
 	let el = document.querySelector( 'html' );
 
@@ -70,7 +71,7 @@ browser.swapHTMLClasses = function() {
 	* Adds smooth scrolling to ID links
 	*
 	*/
-browser.addSmoothScrolling = function() {
+browser.addSmoothScrolling = () => {
 
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
@@ -88,7 +89,7 @@ browser.addSmoothScrolling = function() {
 	* Registers a service worker
 	*
 	*/
-browser.registerServiceWorker = function() {
+browser.registerServiceWorker = () => {
 
 	console.log( "Will the service worker register?" );
 	navigator.serviceWorker.register( '/serviceworker.js' )
@@ -106,7 +107,7 @@ browser.registerServiceWorker = function() {
 	* Adds browser event listners
 	*
 	*/
-browser.addEventListeners = function() {
+browser.addEventListeners = () => {
 
 	window.addEventListener( 'load', browser.swapHTMLClasses, false );
 	window.addEventListener( 'load', browser.addSmoothScrolling, false );
@@ -137,7 +138,7 @@ let a11y = {};
 	* Initializes the main a11y object
 	*
 	*/
-a11y.init = function() {
+a11y.init = () => {
 
 	a11y.addEventListeners();
 
@@ -147,9 +148,11 @@ a11y.init = function() {
 	* Requires minimum click time to trigger card link click
 	*
 	*/
-a11y.requireCardClickTime = function() {
-	const cards = document.querySelectorAll( '.card' );  
-	Array.prototype.forEach.call( cards, card => {  
+a11y.requireCardClickTime = () => {
+
+	const cards = document.querySelectorAll( '.card' );
+
+	Array.prototype.forEach.call( cards, card => {
     let down, up, link = card.querySelector( 'h2 a' );
     card.onmousedown = () => down = +new Date();
     card.onmouseup = () => {
@@ -166,7 +169,7 @@ a11y.requireCardClickTime = function() {
 	* Adds pagination link labels
 	*
 	*/
-a11y.addPaginationLinkLabels = function() {
+a11y.addPaginationLinkLabels = () => {
 
 	let links = document.querySelectorAll( '.pagination a' );
 
@@ -192,7 +195,7 @@ a11y.addPaginationLinkLabels = function() {
 	* Adds a11y event listners
 	*
 	*/
-a11y.addEventListeners = function() {
+a11y.addEventListeners = () => {
 
 	window.addEventListener( 'load', a11y.requireCardClickTime, false );
 	window.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
@@ -219,7 +222,7 @@ let navigation = {};
 	* Initializes the main navigation object
 	*
 	*/
-navigation.init = function() {
+navigation.init = () => {
 
 	navigation.addEventListeners();
 
@@ -229,7 +232,7 @@ navigation.init = function() {
 	* Adds mobile navigation menu toggle button
 	*
 	*/
-navigation.addNavButton = function() {
+navigation.addNavButton = () => {
 
 	let nav = document.querySelector('.navigation'),
 			menu = document.querySelector('.navigation ul'),
@@ -259,7 +262,7 @@ navigation.addNavButton = function() {
 	* Removes mobile navigation menu toggle button
 	*
 	*/
-navigation.removeNavButton = function() {
+navigation.removeNavButton = () => {
 
 	let nav = document.querySelector('.navigation'),
 			button = document.querySelector( '.navigation button' );
@@ -274,15 +277,18 @@ navigation.removeNavButton = function() {
 	* Sets mobile navigation menu toggle button text
 	*
 	*/
-navigation.setNavButtonText = function() {
+navigation.setNavButtonText = () => {
 
 	let button = document.querySelector( '.navigation button span' );
 
-	if ( 'Menu' == button.textContent ) {
-		button.textContent = 'Close';
-	} else if ( 'Close' == button.textContent ) {
-		button.textContent = 'Menu';
-	}
+	// TODO: Remove this if statement if the refactored tertiary statement works fine
+	// if ( 'Menu' == button.textContent ) {
+	// 	button.textContent = 'Close';
+	// } else if ( 'Close' == button.textContent ) {
+	// 	button.textContent = 'Menu';
+	// }
+
+	button.textContent = 'Menu' == button.textContent ? 'Close' : 'Menu';
 
 };
 
@@ -290,7 +296,7 @@ navigation.setNavButtonText = function() {
 	* Hides mobile navigation menu
 	*
 	*/
-navigation.hideNavMenu = function() {
+navigation.hideNavMenu = () => {
 
 	let nav = document.querySelector('.navigation'),
 			menu = document.querySelector('.navigation ul');
@@ -305,7 +311,7 @@ navigation.hideNavMenu = function() {
 	* Shows mobile navigation menu
 	*
 	*/
-navigation.showNavMenu = function() {
+navigation.showNavMenu = () => {
 
 	let nav = document.querySelector('.navigation'),
 			menu = document.querySelector('.navigation ul');
@@ -320,7 +326,7 @@ navigation.showNavMenu = function() {
 	* Toggles navigation button and menu elements' states
 	*
 	*/
-navigation.toggleNavElementsStates = function() {
+navigation.toggleNavElementsStates = () => {
 
 	let menu = document.querySelector('.navigation ul'),
 			links = document.querySelectorAll('.navigation ul a');
@@ -341,8 +347,9 @@ navigation.toggleNavElementsStates = function() {
 /**
 	* Toggles navigation button and menu elements
 	*
+	* param { string } mq - Media query
 	*/
-navigation.toggleNavElements = function( mq ) {
+navigation.toggleNavElements = ( mq ) => {
 
 	if (mq.matches) { // Tablet and up
 
@@ -372,7 +379,7 @@ navigation.toggleNavElements = function( mq ) {
 	* Adds mobile navigation
 	*
 	*/
-navigation.addMobileNavigation = function() {
+navigation.addMobileNavigation = () => {
 
 	let mq = window.matchMedia( '(min-width: 37.5rem)' );
 
@@ -385,7 +392,7 @@ navigation.addMobileNavigation = function() {
 	* Adds navigation event listners
 	*
 	*/
-navigation.addEventListeners = function() {
+navigation.addEventListeners = () => {
 
 	window.addEventListener( 'load', navigation.addMobileNavigation, false );
 
