@@ -12,7 +12,7 @@ let development = {};
 	* Initializes the main development object
 	*
 	*/
-development.init = function() {
+development.init = () => {
 
 	development.addEventListeners();
 
@@ -22,7 +22,7 @@ development.init = function() {
 	* Logs the environment to the console
 	*
 	*/
-development.logEnvironment = function () {
+development.logEnvironment = () => {
 
 	let environment = 'Development environment';
 	
@@ -30,12 +30,31 @@ development.logEnvironment = function () {
 }
 
 /**
+	* Load Netlify CMS Identity
+	*
+	*/
+development.loadNetlifyCMSIdentity = () => {
+
+	if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				});
+			}
+		});
+	}
+
+}
+
+/**
 	* Adds development event listners
 	*
 	*/
-development.addEventListeners = function() {
+development.addEventListeners = () => {
 
 	window.addEventListener( 'load', development.logEnvironment, false );
+	window.addEventListener( 'load', development.loadNetlifyCMSIdentity, false );
 
 };
 
