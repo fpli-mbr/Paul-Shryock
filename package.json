@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/paulshryock/Paul-Shryock#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.6.0"
+    "@11ty/eleventy": "^0.6.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   }
 }
