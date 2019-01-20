@@ -4,16 +4,16 @@
   "description": "Lead Front End Developer & Web Designer with 10 years experience building websites, apps, and digital products for enterprise clients, agencies & startups.",
   "private": true,
   "scripts": {
-    "11ty": "npx eleventy",
-    "serve": "npx eleventy --serve",
-    "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy",
-    "debug-serve": "DEBUG=* npx eleventy --serve",
-    "debug-watch": "DEBUG=* npx eleventy --watch",
+    "11ty": "npx webpack; npx eleventy",
+    "serve": "npx webpack; npx eleventy --serve",
+    "watch": "npx webpack; npx eleventy --watch",
+    "debug": "npx webpack; DEBUG=* npx eleventy",
+    "debug-serve": "npx webpack; DEBUG=* npx eleventy --serve",
+    "debug-watch": "npx webpack; DEBUG=* npx eleventy --watch",
     "clean": "if [ -e _site ]; then rm -R _site; fi",
-    "development": "npm run-script clean; ELEVENTY_ENV=development npx eleventy --serve",
-    "staging": "npm run-script clean; ELEVENTY_ENV=staging npx eleventy",
-    "production": "npm run-script clean; ELEVENTY_ENV=production npx eleventy"
+    "development": "npx webpack; npm run-script clean; ELEVENTY_ENV=development npx eleventy --serve",
+    "staging": "npx webpack; npm run-script clean; ELEVENTY_ENV=staging npx eleventy",
+    "production": "npx webpack; npm run-script clean; ELEVENTY_ENV=production npx eleventy"
   },
   "repository": {
     "type": "git",
