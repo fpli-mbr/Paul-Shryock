@@ -5,15 +5,26 @@
 
 Reboot of my personal website, [pshry.com](https://pshry.com/). Starting from scratch without reinventing the wheel.
 
+## Technology
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- npm
+- webpack
+- Eleventy
+- Netlify CMS
+- git
+
 ## Links
 
-- Project homepage: [https://paulshryock.github.io/Paul-Shryock/](https://paulshryock.github.io/Paul-Shryock/)
 - Repository: [https://github.com/paulshryock/Paul-Shryock](https://github.com/paulshryock/Paul-Shryock)
 - Releases:
 	- [v0.1.0 - Development](https://github.com/paulshryock/Paul-Shryock/releases/tag/v0.1.0)
 - Issue tracker: [https://github.com/paulshryock/Paul-Shryock/issues](https://github.com/paulshryock/Paul-Shryock/issues)
-  - In case of sensitive bugs like security vulnerabilities, please contact [Paul Shryock](mailto:paul@pshry.com) directly instead of using issue tracker. I value your effort
-    to improve the security and privacy of this project!
+- Changelog: [https://github.com/paulshryock/Paul-Shryock/blob/master/CHANGELOG.md](https://github.com/paulshryock/Paul-Shryock/blob/master/CHANGELOG.md)
+  - In case of sensitive bugs like security vulnerabilities, please contact [Paul Shryock](mailto:paul@pshry.com) directly instead of using issue tracker. I value your effort to improve the security and privacy of this project!
 
 ## Licensing
 
