@@ -716,11 +716,11 @@ code,
 
 /* Dark Blue / hsl( 240, 100%, 30% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Dark Blue - Half Saturation / hsl( 240, 50%, 30% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Dark Blue - Half Saturation / hsl( 240, 50%, 30% ) / rgb( 38, 38, 114 ) / #262672 */
 
 .archive-header {
-	/*background: #00f;*/
-	/*background: rgb( 0, 0, 255 );*/
+	background: #262672;
+	background: rgb( 38, 38, 114 );
 	background: hsl( 240, 50%, 30% );
 }
 
@@ -736,9 +736,11 @@ code,
 
 /* Lightest Blue / hsl( 240, 100%, 90% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* White Blue / hsl( 240, 100%, 95% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* White Blue / hsl( 240, 100%, 95% ) / rgb( 229, 229, 255 ) / #e5e5ff */
 
 .archive-header {
+	color: #e5e5ff;
+	color: rgb( 229, 229, 255 );
 	color: hsl( 240, 100%, 95% );
 }
 
@@ -766,40 +768,38 @@ a:visited {
 	background: hsl( 240, 100%, 50% );
 }
 
-/* Purple / hsl( 280, 100%, 37% ) / rgb( 126, 0, 189 ) / #7e00bd */
+/* Purple / hsl( 300, 100%, 25% ) / rgb( 128, 0, 128 ) / #800080 / purple */
 
 a:hover,
 a:focus {
-	color: #7e00bd;
-	color: rgb( 126, 0, 189 );
-	color: hsl( 280, 100%, 37% );
+	color: purple;
+	color: #800080;
+	color: rgb( 128, 0, 128 );
+	color: hsl( 300, 100%, 25% );
 }
 
 .navigation button:hover .hamburger,
 .navigation button:focus .hamburger,
 .button_cta:hover,
 .button_cta:focus {
-	background: #7e00bd;
-	background: rgb( 126, 0, 189 );
-	background: hsl( 280, 100%, 37% );
+	background: purple;
+	background: #800080;
+	background: rgb( 128, 0, 128 );
+	background: hsl( 300, 100%, 25% );
 }
 
-/* Purple / hsl( 271, 68%, 32% ) / rgb( 85, 26, 139 ) / #551a8b */
-
-/* Red / hsl( 0, 100%, 50% ) / rgb( 255, 0, 0 ) / #f00 / red */
+/* Red / hsl( 340, 100%, 32% ) / rgb( 163, 0, 54 ) / #a30036 */
 
 a:active {
-	color: red;
-	color: #f00;
-	color: rgb( 255, 0, 0 );
-	color: hsl( 0, 100%, 50% );
+	color: #a30036;
+	color: rgb( 163, 0, 54 );
+	color: hsl( 340, 100%, 32% );
 }
 
 .button_cta:active {
-	background: red;
-	background: #f00;
-	background: rgb( 255, 0, 0 );
-	background: hsl( 0, 100%, 50% );
+	background: #a30036;
+	background: rgb( 163, 0, 54 );
+	background: hsl( 340, 100%, 32% );
 }
 
 /**
@@ -1621,7 +1621,8 @@ h2 {
 }
 
 article img + *,
-fieldset + fieldset {
+fieldset + fieldset,
+.site-footer {
 	margin-top: 2rem;
 }
 
