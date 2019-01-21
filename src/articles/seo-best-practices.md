@@ -1,6 +1,6 @@
 ---
 title: SEO Best Practices
-excerpt: 
+excerpt: When optimizing websites for search engines, following a few solid best practices goes a long way.
 date: 2019-01-01T00:00:00-5
 topics: [ SEO ]
 
