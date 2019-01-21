@@ -2,10 +2,12 @@
 layout: global
 ---
 
-			<header class="container">
-				<h1 class="post-title">{{ title }}</h1>
-				{{ excerpt }}
-			</header><!-- .container -->
+			<header class="container archive-header">
+				<div class="archive-header__content">
+					<h1 class="post-title archive-title">{{ title }}</h1>
+					<p class="archive-excerpt">{{ excerpt }}</p>
+				</div><!-- .archive-header__content -->
+			</header><!-- .container .archive-header -->
 
 			<ul class="container posts">
 				{{ content }}
