@@ -82,7 +82,8 @@ var,
 article header p,
 footer p,
 .breadcrumb,
-.card footer {
+.card footer,
+.archive-excerpt {
 	font-family: "IBM Plex Mono", /* Ideal */
 		Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, /* Fit */ /* Common */
 		monospace; /* Generic */
@@ -440,6 +441,15 @@ th {
 	text-align: left;
 }
 
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.site-header,
+	.site-footer {
+		text-align: center;
+	}
+
+}
+
 /* Hypens */
 
 main p {
@@ -520,7 +530,7 @@ q::before,
 
 q::after,
 .testimonial blockquote p:last-child::after {
-	content: '\00a0' close-quote;
+	content: close-quote;
 }
 
 /**
@@ -679,7 +689,8 @@ thead,
 .button_cta:link,
 .button_cta:visited,
 .button_cta:hover,
-.button_cta:focus {
+.button_cta:focus,
+.archive-title {
 	color: #fff;
 	color: rgb( 255, 255, 255 );
 	color: hsl( 0, 0%, 100% );
@@ -696,27 +707,39 @@ code,
 	background: hsl( 0, 0%, 100% );
 }
 
-/* Black Blue / hsl( 240, 100%, 95% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Black Blue / hsl( 240, 100%, 5% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Darkest Blue / hsl( 240, 100%, 90% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Darkest Blue / hsl( 240, 100%, 10% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Darker Blue / hsl( 240, 100%, 80% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Darker Blue / hsl( 240, 100%, 20% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Dark Blue / hsl( 240, 100%, 70% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Dark Blue / hsl( 240, 100%, 30% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Medium Dark Blue / hsl( 240, 100%, 60% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Dark Blue - Half Saturation / hsl( 240, 50%, 30% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+.archive-header {
+	/*background: #00f;*/
+	/*background: rgb( 0, 0, 255 );*/
+	background: hsl( 240, 50%, 30% );
+}
 
-/* Medium Light Blue / hsl( 240, 100%, 40% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Medium Dark Blue / hsl( 240, 100%, 40% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Light Blue / hsl( 240, 100%, 30% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( 0, 0, 255 ) / #00f / blue */
 
-/* Lighter Blue / hsl( 240, 100%, 20% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Medium Light Blue / hsl( 240, 100%, 60% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* Lightest Blue / hsl( 240, 100%, 10% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Light Blue / hsl( 240, 100%, 70% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
-/* White Blue / hsl( 240, 100%, 5% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Lighter Blue / hsl( 240, 100%, 80% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Lightest Blue / hsl( 240, 100%, 90% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* White Blue / hsl( 240, 100%, 95% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+.archive-header {
+	color: hsl( 240, 100%, 95% );
+}
 
 /**
 	* Style hyperlinks in order
@@ -725,21 +748,21 @@ code,
 	* “Lord Vader Hates Furry Animals”
 	*/
 
-/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( 0, 0, 255 ) / #00f / blue */
 
 a:link,
 a:visited {
-	/*color: #XXXXXX;*/
-	/*color: rgb( XXX, XXX, XXX );*/
+	color: #00f;
+	color: rgb( 0, 0, 255 );
 	color: hsl( 240, 100%, 50% );
 }
 
 .button_cta:link,
 .button_cta:visited,
 .hamburger {
-	background: #1a1aff;
-	background: rgb( 26, 26, 255 );
-	background: hsl( 240, 100%, 55% );
+	background: #00f;
+	background: rgb( 0, 0, 255 );
+	background: hsl( 240, 100%, 50% );
 }
 
 /* Purple / hsl( 280, 100%, 37% ) / rgb( 126, 0, 189 ) / #7e00bd */
@@ -1239,6 +1262,7 @@ textarea {
 
 /* ch */
 
+.archive-header__content,
 .post {
 	max-width: 36.4rem;
 }
@@ -1465,7 +1489,9 @@ article header p:first-of-type,
 
 /* auto */
 
-.pagination ul {
+.pagination ul,
+.post,
+.archive-header__content {
 	margin: 0 auto;
 }
 
@@ -1477,14 +1503,6 @@ kbd,
 code,
 .pagination a {
 	margin: 0 0.125rem;
-}
-
-.testimonial blockquote p:first-child::before {
-	margin: 0 0.125rem 0 0;
-}
-
-.testimonial blockquote p:first-child::after {
-	margin: 0 0 0 0.125rem;
 }
 
 .hamburger {
@@ -1513,9 +1531,12 @@ form div {
 	margin: 2rem 0.5rem;
 }
 
+.archive-header {
+	margin: 0 0 3rem;
+}
+
 .single .post-header__image,
-.single .post-footer,
-.archive .post + .post {
+.single .post-footer {
 	margin: 4rem 0 0;
 }
 
@@ -1605,6 +1626,10 @@ h2 {
 article img + *,
 fieldset + fieldset {
 	margin-top: 2rem;
+}
+
+.archive .post + .post {
+	margin-top: 4rem;
 }
 
 /* Margin Bottom */
@@ -1759,7 +1784,7 @@ progress {
 	nav ul,
 	nav ol {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 }
