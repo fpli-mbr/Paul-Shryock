@@ -323,7 +323,8 @@ cite {
 
 em,
 i,
-q {
+q,
+.site-description {
 	font-style: italic;
 }
 
@@ -412,6 +413,10 @@ abbr,
 
 /* White Space and Word Wrap */
 
+.no-break {
+	white-space: nowrap;	
+}
+
 legend {
   white-space: normal;
 }
@@ -447,6 +452,14 @@ th {
 	.site-header,
 	.site-footer {
 		text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 56.25rem / 900px */
+
+	.site-header {
+		text-align: unset;
 	}
 
 }
@@ -1512,6 +1525,10 @@ code,
 
 .breadcrumb li + li::before {
 	margin: 0 0.25em;
+}
+
+.site-description {
+	margin: 0.5rem 0 0;
 }
 
 nav ul,

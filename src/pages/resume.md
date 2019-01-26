@@ -23,7 +23,7 @@ body_class: [
 
 ## Experience
 
-{% for employer in experience.employers limit:5 %}
+{% for employer in experience.employers limit:7 %}
 
 - **{{ employer.role }}**  
 	{{ employer.company }} _({{ employer.start_date | date: '%B, %Y' }}{% if employer.end_date %}&ndash;{{ employer.end_date | date: '%Y' }}{% endif %})_
@@ -36,9 +36,9 @@ body_class: [
 
 {% for school in education.schools limit:5 %}
 
-- **{{ school.degree }}**  
-	{{ school.school }} _({{ school.start_date | date: '%B, %Y' }}{% if school.end_date %}&ndash;{{ school.end_date | date: '%Y' }}{% endif %})_
-
+- **{{ school.school }}**{% if school.url %}, _[{{ school.url }}]({{ school.url }})_{% endif %}  
+	_({{ school.start_date | date: '%B, %Y' }}{% if school.end_date %}&ndash;{{ school.end_date | date: '%B, %Y' }}{% else %}&ndash;present{% endif %})_  
+	{% if school.degree %}_{{ school.degree }}_{% endif %}
 	{{ school.details }}
 
 {% endfor %}
