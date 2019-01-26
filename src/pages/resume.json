@@ -7,138 +7,101 @@
 	"experience": {
 		"employers": [
 			{
-				"company": "Paul Shryock Consulting",
-				"role": "Lead Front End Developer and Web Designer",
-				"start_date": "2009-02-01",
-				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+				"company": "Palantir Technologies",
+				"role": "Web Developer",
+				"start_date": "2018-09-04"
 			},
 			{
 				"company": "Realogy Holdings Corp.",
 				"role": "Lead Front End Developer",
-				"start_date": "2017-08-12",
-				"responsibilities": "Responsible for owning multiple customer-facing marketing sites and subdomains, coding pages based on designs/specs from team of designers, assist with technical feasibility of UI/UX in the design/readability of content across devices, and ensure sites are performing well and work as intended across all devices and browser types. Focusing on improving site performance (load times), optimizing all views for speed and scalability, improving the user experience, and improving conversion rates."
-			},
-			{
-				"company": "Palantir Technologies",
-				"role": "Web Developer",
-				"start_date": "2018-09-04",
-				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+				"start_date": "2017-08-12"
 			},
 			{
 				"company": "McCann Echo",
 				"role": "Freelance Graphic Designer",
 				"start_date": "2016-10-01",
-				"end_date": "2017-06-01",
-				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+				"end_date": "2017-06-01"
 			},
 			{
 				"company": "Ogilvy Health North America",
 				"role": "Freelance Interactive Art Director",
 				"start_date": "2016-12-01",
-				"end_date": "2017-05-01",
-				"responsibilities": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+				"end_date": "2017-05-01"
 			},
 			{
-				"company": "OSG Billing Services",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "The Creative Group",
+				"role": "Creative Consultant",
+				"start_date": "2016-10-01",
+				"end_date": "2017-07-01"
+			},
+			{
+				"company": "Output Services Group",
+				"role": "Graphic Designer, Web Developer",
+				"start_date": "2015-12-01",
+				"end_date": "2016-10-01"
 			},
 			{
 				"company": "Kaast Machine Tools",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"role": "Web Designer, Web Developer, Marketing Specialist",
+				"start_date": "2014-07-01",
+				"end_date": "2015-12-01"
 			},
 			{
-				"company": "Spirit Media Group",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "Spirit Media Group"
 			},
 			{
-				"company": "Sports Reports Press",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "Sports Reports Press"
 			},
 			{
-				"company": "Barksdale School Portraits",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "Barksdale School Portraits"
 			},
 			{
-				"company": "The Vine Christian Shoppe",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "The Vine Christian Shoppe"
 			},
 			{
-				"company": "Folsom Tool & Mold Co",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "Folsom Tool & Mold Co"
 			},
 			{
-				"company": "The Communitarian",
-				"role": "",
-				"start_date": "",
-				"end_date": "",
-				"responsibilities": ""
+				"company": "The Communitarian"
 			}
 		]
 	},
 	"education": {
 		"schools": [
 			{
-				"school": "",
-				"degree": "",
-				"start_date": "",
-				"end_date": "",
-				"details": ""
+				"school": "The Complete Node.js Course",
+				"url": "codewithmosh.com",
+				"start_date": "2019-01",
+				"details": "Learn to build highly-scalable, fast and secure RESTful APIs with Node, Express, and MongoDB"
 			},
 			{
-				"school": "",
-				"degree": "",
-				"start_date": "",
-				"end_date": "",
-				"details": ""
+				"school": "Command Line Power User",
+				"url": "commandlinepoweruser.com",
+				"start_date": "2018-07",
+				"end_date": "2018-07",
+				"details": "A video series for web developers on learning a modern command line workflow with ZSH, Z and related tools"
 			},
 			{
-				"school": "",
-				"degree": "",
-				"start_date": "",
-				"end_date": "",
-				"details": ""
+				"school": "JavaScript For WordPress",
+				"url": "javascriptforwp.com",
+				"degree": "Online Master Course Cohort Program",
+				"start_date": "2016-06",
+				"end_date": "2018-06",
+				"details": "Learn JavaScript in-depth and work with the DOM, Events, JSON, Local Storage and external APIs"
 			},
 			{
-				"school": "",
-				"degree": "",
-				"start_date": "",
-				"end_date": "",
-				"details": ""
+				"school": "Treehouse",
+				"url": "teamtreehouse.com",
+				"start_date": "2013/01",
+				"end_date": "2016/03",
+				"details": "Learn HTML, CSS, JavaScript, jQuery, PHP, WordPress, SEO, and how to run a business"
 			},
 			{
-				"school": "",
-				"degree": "",
-				"start_date": "",
-				"end_date": "",
-				"details": ""
-			},
-			{
-				"school": "",
-				"degree": "",
-				"start_date": "",
-				"end_date": "",
-				"details": ""
+				"school": "Delaware County Community College",
+				"degree": "Associate in Fine Arts, Graphic Design",
+				"start_date": "2008-08",
+				"end_date": "2011-05",
+				"details": "Learn design concepts to produce intelligent visual communication solutions to client problems"
 			}
 		]
 	},
