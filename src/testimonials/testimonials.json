@@ -3,7 +3,7 @@
 		"HTML"
 	],
 
-	"permalink": "./{{ title | slug }}/index.html",
+	"permalink": "./testimonials/{{ title | slug }}/index.html",
 	"content_type": "testimonial",
 	"layout": "testimonial",
 	"body_class": [
