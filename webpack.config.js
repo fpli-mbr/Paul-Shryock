@@ -39,7 +39,8 @@ const production = Object.assign({}, config,{
 
 // Return Array of Configurations
 module.exports = [
-	development, production,			 
+	development,
+	production,			 
 ];
 
 // Or try this later

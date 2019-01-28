@@ -122,10 +122,10 @@ navigation.toggleNavElementsStates = () => {
 			links = document.querySelectorAll('.navigation ul a');
 
   if (menu.classList.contains('is-active')) {
-    this.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-expanded', 'false');
     navigation.hideNavMenu();
   } else {
-    this.setAttribute('aria-expanded', 'true');
+    menu.setAttribute('aria-expanded', 'true');
     navigation.showNavMenu();
     links[0].focus();
   }

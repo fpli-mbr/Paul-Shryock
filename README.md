@@ -10,12 +10,19 @@ Reboot of my personal website, [pshry.com](https://pshry.com/). Starting from sc
 - HTML
 - CSS
 - JavaScript, ES6
-- Node.js, npm
+- Node, npm
 - webpack
 - git, GitHub
 - Eleventy
 - Netlify CMS
 - Netlify
+
+## Quick Start
+
+1. Install Node
+1. Clone this repo: `git clone https://github.com/paulshryock/Paul-Shryock.git`
+1. Run `npm run-script development`
+1. Visit `localhost:8080` in a browser
 
 ## Links
 
