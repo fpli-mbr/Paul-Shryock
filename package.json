@@ -10,10 +10,11 @@
     "debug": "npx webpack; DEBUG=* npx eleventy",
     "debug-serve": "npx webpack; DEBUG=* npx eleventy --serve",
     "debug-watch": "npx webpack; DEBUG=* npx eleventy --watch",
+    "prepack": "if [ -e src/css ]; then rm -R src/css; fi; if [ -e src/js ]; then rm -R src/js; fi",
     "clean": "if [ -e _site ]; then rm -R _site; fi",
-    "development": "npx webpack; npm run-script clean; ELEVENTY_ENV=development npx eleventy --serve",
-    "staging": "npx webpack; npm run-script clean; ELEVENTY_ENV=staging npx eleventy",
-    "production": "npx webpack; npm run-script clean; ELEVENTY_ENV=production npx eleventy"
+    "development": "npm run-script prepack; npx webpack; npm run-script clean; ELEVENTY_ENV=development npx eleventy --serve",
+    "staging": "npm run-script prepack; npx webpack; npm run-script clean; ELEVENTY_ENV=staging npx eleventy",
+    "production": "npm run-script prepack; npx webpack; npm run-script clean; ELEVENTY_ENV=production npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -30,8 +31,17 @@
   },
   "homepage": "https://github.com/paulshryock/Paul-Shryock#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.6.0",
+    "@11ty/eleventy": "^0.7.1",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
-  }
+  },
+  "dependencies": {}
 }

@@ -391,6 +391,7 @@ module.exports = (function(eleventyConfig) {
 		* Copy static assets
 		*/
 	// requires `passthroughFileCopy: true` in the final `return`
+	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/fonts");
