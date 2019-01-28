@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-## 0.1.0 - 2019-01-01 - Development
+## 0.1.0 - 2019-02-01 - Development
 
 ### Added
 - Add page, archive, article, tutorial, testimonial, case study, form, and project content types
