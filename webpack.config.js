@@ -12,7 +12,7 @@ module.exports = {
 		'js/development.js': './src/_assets/js/development.js',
 
 		// SCSS
-		'css/app.css': './src/_assets/scss/app.scss',
+		// 'css/app.css': './src/_assets/scss/app.scss',
 	},
 
 	output: {
@@ -46,7 +46,7 @@ module.exports = {
 			{
 				// Options similar to the same options in webpackOptions.output
 				// both options are optional
-				filename: "./css/[name]",
+				filename: "./css/app.css",
 				chunkFilename: "./css/[id].css"
 			}
 		)
