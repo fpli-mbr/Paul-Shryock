@@ -46,8 +46,8 @@ module.exports = {
 			{
 				// Options similar to the same options in webpackOptions.output
 				// both options are optional
-				filename: "./[name]",
-				chunkFilename: "./[id].css"
+				filename: "./css/[name]",
+				chunkFilename: "./css/[id].css"
 			}
 		)
 	],
