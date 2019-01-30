@@ -1,6 +1,5 @@
 ---
+title: 'New Issue'
 labels: enhancement
 assignees: paulshryock
-milestones: Launch
-projects: Website
 ---
