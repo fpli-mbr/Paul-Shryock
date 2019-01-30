@@ -54,7 +54,7 @@
 
 /* Font Face */
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i|IBM+Plex+Sans:400,400i,700,700i|IBM+Plex+Serif:400,400i,700,700i');
+/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i|IBM+Plex+Sans:400,400i,700,700i|IBM+Plex+Serif:400,400i,700,700i'); */
 
 /* Font Family */
 
@@ -1962,11 +1962,6 @@ progress {
 	* TODO: else { continue }
 	* TODO: Update styles to match look and feel of the rest of the site
 	* TODO: Integrate and organize these styles in with the rest of the file
-	* 
-	* ```html
-	* <input type="radio" name="radio-button-1" id="radio-button-1" checked>
-	* <label for="radio-button-1">Radio Button 1</label>
-	* ```
 	*
 	* ```css
 	* input[type=radio],

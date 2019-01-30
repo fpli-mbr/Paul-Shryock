@@ -34,3 +34,5 @@ certs
 cms
 scratch
 *auth*
+css/
+js/

@@ -23,5 +23,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add dynamic navigation
 - Add API json files
 - Add CMS
-- Add webpack, bundle assets
+- Add webpack & sass, bundle assets
 - Add basic styling and functionality
