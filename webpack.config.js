@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const tailwindcss = require('tailwindcss');
 
 module.exports = {
 	
@@ -24,12 +25,23 @@ module.exports = {
 			 },
 			{
 				test: /\.(sa|sc|c)ss$/,
+        exclude: /node_modules/,
 				use: [
-					'style-loader',
-					MiniCssExtractPlugin.loader,
-					'css-loader',
-					// Add PostCSS
-					'sass-loader',
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            }
+          },
+          {
+            loader: 'postcss-loader'
+          }
 				],
 			},
 			{
