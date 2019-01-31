@@ -1,3 +1,53 @@
+/****************************************************
+	* Development
+****************************************************/
+
+/** {
+	color: red;
+}*/
+
+/** {
+	background: red;
+}*/
+
+/** {
+	border: 1px solid red;
+}*/
+
+/**
+	* Media Queries
+	*/
+
+/* Default: Mobile */
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+}
+
+@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 56.25rem / 900px */
+
+}
+
+@media screen and (min-width: 75rem) { /* Desktop / 75rem / 1200px */
+
+}
+
+@media screen and (min-width: 112.5rem) { /* Big Desktop / 112.5rem / 1800px */
+
+}
+
+/****************************************************
+	* Format
+****************************************************/
+
+/**
+	* Viewport
+	*/
+
+@viewport {
+	width: device-width;
+}
+
 /**
 	* Typography
 	*/
@@ -707,7 +757,63 @@ code,
 	color: hsl( 240, 100%, 95% );
 }
 
-@include 'components/hyperlinks';
+/**
+	* Style hyperlinks in order
+	*
+	* :link, :visited, :hover, :focus, :active
+	* “Lord Vader Hates Furry Animals”
+	*/
+
+/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( 0, 0, 255 ) / #00f / blue */
+
+a:link,
+a:visited {
+	color: #00f;
+	color: rgb( 0, 0, 255 );
+	color: hsl( 240, 100%, 50% );
+}
+
+.button_cta:link,
+.button_cta:visited,
+.hamburger {
+	background: #00f;
+	background: rgb( 0, 0, 255 );
+	background: hsl( 240, 100%, 50% );
+}
+
+/* Purple / hsl( 300, 100%, 25% ) / rgb( 128, 0, 128 ) / #800080 / purple */
+
+a:hover,
+a:focus {
+	color: purple;
+	color: #800080;
+	color: rgb( 128, 0, 128 );
+	color: hsl( 300, 100%, 25% );
+}
+
+.navigation button:hover .hamburger,
+.navigation button:focus .hamburger,
+.button_cta:hover,
+.button_cta:focus {
+	background: purple;
+	background: #800080;
+	background: rgb( 128, 0, 128 );
+	background: hsl( 300, 100%, 25% );
+}
+
+/* Red / hsl( 340, 100%, 32% ) / rgb( 163, 0, 54 ) / #a30036 */
+
+a:active {
+	color: #a30036;
+	color: rgb( 163, 0, 54 );
+	color: hsl( 340, 100%, 32% );
+}
+
+.button_cta:active {
+	background: #a30036;
+	background: rgb( 163, 0, 54 );
+	background: hsl( 340, 100%, 32% );
+}
 
 /**
 	* Colorless / Transparent
