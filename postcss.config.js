@@ -1,14 +1,9 @@
+const tailwindcss = require('tailwindcss');
+
 module.exports = {
 	plugins: [
 	  require('precss'),
-    require('tailwindcss')('./tailwind.js'),
     require('autoprefixer'),
+    tailwindcss('./tailwind.js'),
 	]
-
-	// parser: 'sugarss',
-	// plugins: {
-	// 	'postcss-import': {},
-	// 	'postcss-preset-env': {},
-	// 	'cssnano': {}
-	// }
 }
