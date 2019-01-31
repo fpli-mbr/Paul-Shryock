@@ -2,53 +2,19 @@
 	* Typography
 	*/
 
-/* Font Face */
-
-@import 'load-fonts';
-
 /* Font Family */
 
-body {
-	font-family: "IBM Plex Sans", /* Ideal */
-		Lato, Roboto, Helvetica, Arial, /* Fit */
-		"San Francisco", "Helvetica Neue", /* Common */
-		sans-serif; /* Generic */
-}
-
-q,
 .pullquote,
 .testimonial blockquote {
-	font-family: "IBM Plex Serif", /* Ideal */
-		Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, /* Fit */ /* Common */
-		serif; /* Generic */
+	font-family: serif;
 }
 
-pre,
-code,
-kbd,
-tt,
-samp,
-var,
 article header p,
 footer p,
 .breadcrumb,
 .card footer,
 .archive-excerpt {
-	font-family: "IBM Plex Mono", /* Ideal */
-		Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, /* Fit */ /* Common */
-		monospace; /* Generic */
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
+	font-family: mono;
 }
 
 /* Font Size */
