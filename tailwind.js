@@ -85,8 +85,8 @@ let lits = {
 let colors = {
 	'transparent': 'transparent',
 
-	'black':         			hsl(hues['gray'], sats['some'], 0%),
-	'white':         			hsl(hues['gray'], sats['some'], 100%),
+	'black':         			hsl(hues['gray'], sats['some'], '0%'),
+	'white':         			hsl(hues['gray'], sats['some'], '100%'),
 
 	'gray-black':         hsl(hues['gray'], sats['some'], lits['black']),
 	'gray-darkest':       hsl(hues['gray'], sats['some'], lits['darkest']),
@@ -246,12 +246,20 @@ module.exports = {
 	|
 	*/
 
+/* Default: Mobile */
+/* Tablet Portrait / 37.5rem / 600px */
+/* Tablet Landscape / 56.25rem / 900px */
+/* Desktop / 75rem / 1200px */
+/* Big Desktop / 112.5rem / 1800px */
+
 	screens: {
-		'sm': '600px',
-		'md': '900px',
-		'lg': '1200px',
-		'xl': '1800px',
+		'sm': '37.5rem',
+		'md': '56.25rem',
+		'lg': '75rem',
+		'xl': '112.5rem',
 	},
+
+}
 
 
 	/*
