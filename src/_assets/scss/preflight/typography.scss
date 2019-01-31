@@ -1,0 +1,16 @@
+body {
+	@apply font-sans;
+}
+
+q {
+	@apply font-serif;
+}
+
+pre,
+code,
+kbd,
+tt,
+samp,
+var {
+	@apply font-mono;
+}
