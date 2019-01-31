@@ -96,13 +96,17 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
+  'blue-black': 'hsl( 240, 100%, 5% )',
+  'blue-darkest': 'hsl( 240, 100%, 10% )',
+  'blue-darker': 'hsl( 240, 100%, 20% )',
+  'blue-dark': 'hsl( 240, 100%, 30% )',
+  'blue-medium-dark': 'hsl( 240, 100%, 40% )',
+  'blue': 'hsl( 240, 100%, 50% )',
+  'blue-medium-light': 'hsl( 240, 100%, 60% )',
+  'blue-light': 'hsl( 240, 100%, 70% )',
+  'blue-lighter': 'hsl( 240, 100%, 80% )',
+  'blue-lightest': 'hsl( 240, 100%, 90% )',
+  'blue-white': 'hsl( 240, 100%, 95% )',
 
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',
@@ -167,10 +171,10 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'sm': '600px',
+    'md': '900px',
+    'lg': '1200px',
+    'xl': '1800px',
   },
 
 
@@ -955,8 +959,8 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
+      center: true,
+      padding: '1rem',
     }),
   ],
 
