@@ -1,0 +1,37 @@
+/**
+	* Style hyperlinks in order
+	*
+	* :link, :visited, :hover, :focus, :active
+	* “Lord Vader Hates Furry Animals”
+	*/
+
+a:link,
+a:visited {
+	@apply text-blue;
+}
+
+.button_cta:link,
+.button_cta:visited,
+.hamburger {
+	@apply bg-blue;
+}
+
+a:hover,
+a:focus {
+	@apply text-purple;
+}
+
+.navigation button:hover .hamburger,
+.navigation button:focus .hamburger,
+.button_cta:hover,
+.button_cta:focus {
+	@apply bg-purple
+}
+
+a:active {
+	@apply text-red;
+}
+
+.button_cta:active {
+	@apply bg-red;
+}
