@@ -1,4 +1,4 @@
-const CleanCSS = require("clean-css");
+const fs = require('fs');
 
 module.exports = (function(eleventyConfig) {
 	
@@ -29,11 +29,6 @@ module.exports = (function(eleventyConfig) {
 			return yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "") + ' ago';
 		}
 	});
-
-	// Add cssmin filter
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
 	
 	/**
 		* Add layout aliases
@@ -391,17 +386,30 @@ module.exports = (function(eleventyConfig) {
 		* Copy static assets
 		*/
 	// requires `passthroughFileCopy: true` in the final `return`
-	eleventyConfig.addPassthroughCopy("src/css");
-	eleventyConfig.addPassthroughCopy("src/js");
-	eleventyConfig.addPassthroughCopy("src/img");
-	eleventyConfig.addPassthroughCopy("src/fonts");
-	eleventyConfig.addPassthroughCopy("src/admin"); // Bring the CMS too
-	eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
-	eleventyConfig.addPassthroughCopy("src/favicon.ico");
-	eleventyConfig.addPassthroughCopy("src/humans.txt");
-	eleventyConfig.addPassthroughCopy("src/manifest.json");
-	eleventyConfig.addPassthroughCopy("src/robots.txt");
-	eleventyConfig.addPassthroughCopy("src/serviceworker.js");
+
+	const assets = [
+		'css',
+		'js',
+		'img',
+		'fonts',
+		'admin',
+		'browserconfig.xml',
+		'favicon.ico',
+		'humans.txt',
+		'manifest.json',
+		'robots.txt',
+		'serviceworker.js',
+	];
+
+	assets.forEach((asset) => {
+	  try {
+		  if (fs.existsSync(`./src/${asset}`)) {
+				eleventyConfig.addPassthroughCopy(`src/${asset}`);
+		  }
+		} catch(err) {
+		  console.error(err)
+		}
+	});
 	
 	return {
     passthroughFileCopy: true,
