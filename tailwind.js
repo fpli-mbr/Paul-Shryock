@@ -43,6 +43,39 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 |
 */
 
+hsl = (hue, saturation, lightness) => {
+  return `hsl(${hue}, ${saturation}, ${lightness})`
+}
+
+let hues = {
+  'blue': 240,
+  'indigo': 230,
+  'purple': 260,
+  'pink': 340,
+}
+
+let sats = {
+  'none': '0%',
+  'some': '25%',
+  'half': '50%',
+  'most': '75%',
+  'full': '100%',
+}
+
+let lits = {
+  'black': '5%',
+  'darkest': '10%',
+  'darker': '20%',
+  'dark': '30%',
+  'medium-dark': '40%',
+  'medium': '50%',
+  'medium-light': '60%',
+  'light': '70%',
+  'lighter': '80%',
+  'lightest': '90%',
+  'white': '95%',
+}
+
 let colors = {
   'transparent': 'transparent',
 
@@ -96,41 +129,53 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-black': 'hsl( 240, 100%, 5% )',
-  'blue-darkest': 'hsl( 240, 100%, 10% )',
-  'blue-darker': 'hsl( 240, 100%, 20% )',
-  'blue-dark': 'hsl( 240, 100%, 30% )',
-  'blue-medium-dark': 'hsl( 240, 100%, 40% )',
-  'blue': 'hsl( 240, 100%, 50% )',
-  'blue-medium-light': 'hsl( 240, 100%, 60% )',
-  'blue-light': 'hsl( 240, 100%, 70% )',
-  'blue-lighter': 'hsl( 240, 100%, 80% )',
-  'blue-lightest': 'hsl( 240, 100%, 90% )',
-  'blue-white': 'hsl( 240, 100%, 95% )',
+  'blue-black':         hsl(hues['blue'], sats['full'], lits['black']),
+  'blue-darkest':       hsl(hues['blue'], sats['full'], lits['darkest']),
+  'blue-darker':        hsl(hues['blue'], sats['full'], lits['darker']),
+  'blue-dark':          hsl(hues['blue'], sats['full'], lits['dark']),
+  'blue-medium-dark':   hsl(hues['blue'], sats['full'], lits['medium-dark']),
+  'blue':               hsl(hues['blue'], sats['full'], lits['medium']),
+  'blue-medium-light':  hsl(hues['blue'], sats['full'], lits['medium-light']),
+  'blue-light':         hsl(hues['blue'], sats['full'], lits['light']),
+  'blue-lighter':       hsl(hues['blue'], sats['full'], lits['lighter']),
+  'blue-lightest':      hsl(hues['blue'], sats['full'], lits['lightest']),
+  'blue-white':         hsl(hues['blue'], sats['full'], lits['white']),
 
-  'indigo-darkest': '#191e38',
-  'indigo-darker': '#2f365f',
-  'indigo-dark': '#5661b3',
-  'indigo': '#6574cd',
-  'indigo-light': '#7886d7',
-  'indigo-lighter': '#b2b7ff',
-  'indigo-lightest': '#e6e8ff',
+  'indigo-black':         hsl(hues['indigo'], sats['half'], lits['black']),
+  'indigo-darkest':       hsl(hues['indigo'], sats['half'], lits['darkest']),
+  'indigo-darker':        hsl(hues['indigo'], sats['half'], lits['darker']),
+  'indigo-dark':          hsl(hues['indigo'], sats['half'], lits['dark']),
+  'indigo-medium-dark':   hsl(hues['indigo'], sats['half'], lits['medium-dark']),
+  'indigo':               hsl(hues['indigo'], sats['half'], lits['medium']),
+  'indigo-medium-light':  hsl(hues['indigo'], sats['half'], lits['medium-light']),
+  'indigo-light':         hsl(hues['indigo'], sats['half'], lits['light']),
+  'indigo-lighter':       hsl(hues['indigo'], sats['half'], lits['lighter']),
+  'indigo-lightest':      hsl(hues['indigo'], sats['half'], lits['lightest']),
+  'indigo-white':         hsl(hues['indigo'], sats['half'], lits['white']),
 
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
+  'purple-black':         hsl(hues['purple'], sats['most'], lits['black']),
+  'purple-darkest':       hsl(hues['purple'], sats['most'], lits['darkest']),
+  'purple-darker':        hsl(hues['purple'], sats['most'], lits['darker']),
+  'purple-dark':          hsl(hues['purple'], sats['most'], lits['dark']),
+  'purple-medium-dark':   hsl(hues['purple'], sats['most'], lits['medium-dark']),
+  'purple':               hsl(hues['purple'], sats['most'], lits['medium']),
+  'purple-medium-light':  hsl(hues['purple'], sats['most'], lits['medium-light']),
+  'purple-light':         hsl(hues['purple'], sats['most'], lits['light']),
+  'purple-lighter':       hsl(hues['purple'], sats['most'], lits['lighter']),
+  'purple-lightest':      hsl(hues['purple'], sats['most'], lits['lightest']),
+  'purple-white':         hsl(hues['purple'], sats['most'], lits['white']),
 
-  'pink-darkest': '#451225',
-  'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
+  'pink-black':         hsl(hues['pink'], sats['most'], lits['black']),
+  'pink-darkest':       hsl(hues['pink'], sats['most'], lits['darkest']),
+  'pink-darker':        hsl(hues['pink'], sats['most'], lits['darker']),
+  'pink-dark':          hsl(hues['pink'], sats['most'], lits['dark']),
+  'pink-medium-dark':   hsl(hues['pink'], sats['most'], lits['medium-dark']),
+  'pink':               hsl(hues['pink'], sats['most'], lits['medium']),
+  'pink-medium-light':  hsl(hues['pink'], sats['most'], lits['medium-light']),
+  'pink-light':         hsl(hues['pink'], sats['most'], lits['light']),
+  'pink-lighter':       hsl(hues['pink'], sats['most'], lits['lighter']),
+  'pink-lightest':      hsl(hues['pink'], sats['most'], lits['lightest']),
+  'pink-white':         hsl(hues['pink'], sats['most'], lits['white']),
 }
 
 module.exports = {
