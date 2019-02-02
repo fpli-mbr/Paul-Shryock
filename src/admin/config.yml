@@ -10,7 +10,7 @@ publish_mode: editorial_workflow
 media_folder: "img/uploads"
 public_folder: "/_site/img/uploads"
 
-display_url: https://shryart.com
+#display_url: https://pshry.com
 
 editor:
   preview: true
