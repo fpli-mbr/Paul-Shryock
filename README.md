@@ -1,7 +1,7 @@
 # Paul Shryock
 > Personal Website
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/paulshryock/Paul-Shryock/graphs/commit-activity)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c56562f1-564b-4e2d-b134-05891bfc4fb7/deploy-status)](https://app.netlify.com/sites/paul-shryock/deploys) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/paulshryock/Paul-Shryock/graphs/commit-activity)
 
 Reboot of my personal website, [pshry.com](https://pshry.com/). Starting from scratch without reinventing the wheel.
 
