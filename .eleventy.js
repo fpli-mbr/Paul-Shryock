@@ -393,6 +393,7 @@ module.exports = (function(eleventyConfig) {
 		'img',
 		'fonts',
 		'admin',
+		'_redirects',
 		'browserconfig.xml',
 		'favicon.ico',
 		'humans.txt',

@@ -26,13 +26,15 @@ Temporary Items
 .apdisk
 
 # Project files
+certs
+*auth*
+scratch
+cms
 _site
 node_modules
 package-lock.json
 .htaccess
-certs
-cms
-scratch
-*auth*
+fonts/
 css/
 js/
+img/
