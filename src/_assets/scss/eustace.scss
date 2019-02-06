@@ -630,8 +630,7 @@ table,
 details[open],
 kbd,
 code,
-.button,
-.skip-link {
+.button {
 	background: #fff;
 	background: rgb( 255, 255, 255 );
 	background: hsl( 0, 0%, 100% );
@@ -935,7 +934,6 @@ input[type="time"],
 input[type="url"],
 textarea,
 .button,
-.skip-link,
 .hamburger {
 	border-radius: 0.25em;
 }
@@ -1269,8 +1267,7 @@ input[type="time"],
 input[type="url"],
 textarea,
 button,
-.button,
-.skip-link {
+.button {
 	padding: 0.25rem;
 }
 
@@ -1292,7 +1289,6 @@ fieldset,
 pre code,
 details[open],
 details:not([open]) summary,
-.container,
 .card__text {
 	padding: 1rem;
 }
@@ -1534,7 +1530,6 @@ sup {
   position: relative;
 }
 
-.skip-link,
 .navigation button {
 	position: absolute;
 }
@@ -1553,14 +1548,6 @@ sup {
 	top: -0.5rem;
 }
 
-.skip-link:focus {
-	top: 0.5rem;
-}
-
-.skip-link {
-	top: -3rem;
-}
-
 /* Right */
 
 .navigation button {
@@ -1574,10 +1561,6 @@ sub {
 }
 
 /* Left */
-
-.skip-link:focus {
-	left: 0.5rem;
-}
 
 /* Overflow */
 

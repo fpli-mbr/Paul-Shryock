@@ -1,0 +1,9 @@
+.skip-link {
+	@apply bg-white rounded p-1 absolute;
+	top: -3rem;
+}
+
+.skip-link:focus {
+	top: 0.5rem;
+	left: 0.5rem;
+}
