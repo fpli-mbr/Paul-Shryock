@@ -1,10 +1,5 @@
 .skip-link {
-	background: #fff;
-	background: rgb( 255, 255, 255 );
-	background: hsl( 0, 0%, 100% );
-	border-radius: 0.25em;
-	padding: 0.25rem;
-	position: absolute;
+	@apply bg-white rounded p-1 absolute;
 	top: -3rem;
 }
 
