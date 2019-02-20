@@ -1,10 +1,3 @@
----
-name: New Pull Request
-about: Description goes here
-assignees: paulshryock
-
----
-
 # Description
 
 # Closes issue(s)
