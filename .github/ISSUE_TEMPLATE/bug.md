@@ -5,20 +5,25 @@ assignees: paulshryock
 labels: bug
 ---
 
-## Expected Behavior
-
+## Description
 
 ## Actual Behavior
 
+## Expected Behavior
 
 ## Steps to Reproduce the Problem
 
-  1.
-  1.
-  1.
+1.
+1.
+1.
 
-## Specifications
+## Environment
 
-  -
-  -
-  -
+- Device: 
+- Operating System: 
+- Browser: 
+- Version: 
+
+## Screenshots
+
+## Additional Context
