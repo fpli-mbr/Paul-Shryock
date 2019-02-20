@@ -1,9 +1,10 @@
 ---
-name: 'New Pull Request'
-about: 'Description goes here'
+name: New Pull Request
+about: Description goes here
 assignees: paulshryock
 labels: enhancement
 ---
+
 # Description
 
 # Closes issue(s)

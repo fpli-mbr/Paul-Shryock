@@ -2,7 +2,6 @@
 name: 'Bug'
 about: 'Something isn\'t working'
 assignees: paulshryock
-labels: bug
 ---
 
 ## Description
