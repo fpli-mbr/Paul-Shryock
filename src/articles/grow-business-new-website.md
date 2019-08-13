@@ -3,10 +3,8 @@ title: Grow Your Business With A New Website
 excerpt: Your business needs a new website that looks right on mobile devices, ranks high in search engines like Google, and gets more customers.
 date: 2019-01-01T00:00:00-5
 topics: [ Web Design, SEO ]
-
 seo_title: Grow Your Business With a New Website | Paul Shryock
 seo_description: Your business needs a new website that looks right on mobile devices, is optimized for search engines like Google, and gets more customers.
-
 tags: [ legacy, rewrite ]
 ---
 

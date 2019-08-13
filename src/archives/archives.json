@@ -1,8 +1,0 @@
-{
-	"permalink": "./{{ title | slug }}/index.html",
-	"content_type": "archive",
-	"layout": "archive",
-	"body_class": [
-		"archive"
-	]
-}

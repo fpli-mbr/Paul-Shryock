@@ -3,9 +3,7 @@ title: Write Better SEO Page Titles
 excerpt: Do you want more customers to find your website on page 1 of Google? In order to rank higher and reach more people, you need to optimize each page for search engines. This starts with writing better SEO page titles.
 date: 2019-01-01T00:00:00-5
 topics: [ Front End Development, SEO ]
-
 seo_title: Write Better SEO Page Titles and Rank Higher in Search Engines
-
 tags: [ legacy, rewrite ]
 ---
 

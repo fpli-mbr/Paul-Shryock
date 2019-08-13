@@ -1,9 +1,0 @@
-# humanstxt.org/
-
-The humans responsible
-
-## Contributors
-
-|Name|Role|
-|---|---|
-|[Paul Shryock](https://github.com/paulshryock)|Owner|
